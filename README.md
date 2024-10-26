@@ -1,19 +1,21 @@
-- 👋 Hi, I’m @DXSC795
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+import time
+ 
+t = time.localtime(time.time())
+localtime = time.asctime(t)
+str = "Current Time:" + time.asctime(t)
+ 
+print(str)
 
-<!---
-DXSC795/DXSC795 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
 print ("DXSC = (Deluxe Super Computer) thanks for ruining it")
 
-print ("______________________
-|                    |
-|  DXSC 📀 Wisconsin OS1.0  |
-|                    |
-______________________")
+<font color="purple">
+______________________
+|                     |
+|                     |
+|  DXSC  |                     |
+|                     |
+|  Wisconsin OS1.0  |
+|                     |
+|                     |
+______________________
+</font>
