@@ -1,0 +1,94 @@
+ `?`  symbol on the same line will be ignored by the interpreter.
+ now uses `{}` only at start and stop.
+
+
+*Keywords:*
+
+1. `zhrak` (if)
+2. `koral` (else)
+3. `sarvu` (while)
+4. `torvik` (for)
+5. `nyxal` (def)
+6. `vokar` (print)
+7. `rylakk` (return)
+8. `threx` (and)
+9. `kyrix` (or)
+10. `sygma` (not)
+
+*Operators:*
+
+1. `+` (addition)
+2. `-` (subtraction)
+3. `*` (multiplication)
+4. `/` (division)
+5. `==` (equality)
+6. `!=` (inequality)
+7. `<` (less than)
+8. `>` (greater than)
+9. `<=` (less than or equal)
+10. `>=` (greater than or equal)
+
+*Syntax Highlights:*
+
+- Code enclosed in `{}`.
+- Indentation: 3 spaces.
+
+*Example Code:*
+```
+{
+x = 5
+y = 3
+vokar(x + y)
+
+zhrak x > y:
+vokar("x is greater")
+koral:
+vokar("y is greater")
+}
+```
+Here are the Ternyx data types with new names:
+
+*Numeric Types*
+
+1. `kal` (Integer): Whole numbers, e.g., 1, 2, 3, etc.
+2. `nexa` (Float): Decimal numbers, e.g., 3.14, -0.5, etc.
+
+*Text Type*
+
+1. `vyx` (String): Sequences of characters, e.g., "hello", 'hello', etc.
+
+*Boolean Type*
+
+1. `dual` (Boolean): True or False values.
+
+*Sequence Types*
+
+1. `sek` (List): Ordered collections, e.g., [1, 2, 3], ["a", "b", "c"], etc.
+2. `kor` (Tuple): Ordered, immutable collections, e.g., (1, 2, 3), ("a", "b", "c"), etc.
+
+*Mapping Type*
+
+1. `mapa` (Dictionary): Unordered key-value pairs, e.g., {"name": "Ternyx", "age": 25}, etc.
+
+*Additional Types*
+
+1. `void` (Null): Represents absence of value.
+2. `unin` (Undefined): Represents uninitialized variable.
+
+*Example Usage*
+
+```
+kal x = 5
+nexa y = 3.14
+vyx name = "Ternyx"
+dual isAdmin = True
+sek numbers = [1, 2, 3]
+kor coordinates = (1, 2)
+mapa person = {"name": "Ternyx", "age": 25}
+void empty
+unin uninitialized
+```
+- Declaration: `fn function_name(parameters) { code }`
+- Example: `fn greet(name) { vokar("Hello, " + name) }`
+
+
