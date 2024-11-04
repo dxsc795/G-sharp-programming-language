@@ -1,8 +1,12 @@
- `?`  symbol on the same line will be ignored by the interpreter.
- now uses `{}` only at start and stop.
+Ternyx Language Specification (Updated)
 
+*Syntax*
 
-*Keywords:*
+- Code enclosed in `{}`.
+- Indentation: 3 spaces.
+- `?` symbol on the same line is ignored by the interpreter.
+
+*Keywords*
 
 1. `zhrak` (if)
 2. `koral` (else)
@@ -15,7 +19,7 @@
 9. `kyrix` (or)
 10. `sygma` (not)
 
-*Operators:*
+*Operators*
 
 1. `+` (addition)
 2. `-` (subtraction)
@@ -28,67 +32,56 @@
 9. `<=` (less than or equal)
 10. `>=` (greater than or equal)
 
-*Syntax Highlights:*
+*Data Types*
 
-- Code enclosed in `{}`.
-- Indentation: 3 spaces.
+_Numeric Types_
+1. `kal` (Integer)
+2. `nexa` (Float)
 
-*Example Code:*
-```
-{
-x = 5
-y = 3
-vokar(x + y)
+_Text Type_
+1. `vix` (String)
 
-zhrak x > y:
-vokar("x is greater")
-koral:
-vokar("y is greater")
-}
-```
-Here are the Ternyx data types with new names:
+_Boolean Type_
+1. `dual` (Boolean)
 
-*Numeric Types*
+_Sequence Types_
+1. `sek` (List)
+2. `kor` (Tuple)
 
-1. `kal` (Integer): Whole numbers, e.g., 1, 2, 3, etc.
-2. `nexa` (Float): Decimal numbers, e.g., 3.14, -0.5, etc.
+_Mapping Type_
+1. `mapa` (Dictionary)
 
-*Text Type*
+_Additional Types_
+1. `void` (Null)
+2. `unin` (Undefined)
 
-1. `vix` (String): Sequences of characters, e.g., "hello", 'hello', etc.
+*Function Declaration*
 
-*Boolean Type*
-
-1. `dual` (Boolean): True or False values.
-
-*Sequence Types*
-
-1. `sek` (List): Ordered collections, e.g., [1, 2, 3], ["a", "b", "c"], etc.
-2. `kor` (Tuple): Ordered, immutable collections, e.g., (1, 2, 3), ("a", "b", "c"), etc.
-
-*Mapping Type*
-
-1. `mapa` (Dictionary): Unordered key-value pairs, e.g., {"name": "Ternyx", "age": 25}, etc.
-
-*Additional Types*
-
-1. `void` (Null): Represents absence of value.
-2. `unin` (Undefined): Represents uninitialized variable.
-
-*Example Usage*
-
-```
-kal x = 5
-nexa y = 3.14
-vix name = "Ternyx"
-dual isAdmin = True
-sek numbers = [1, 2, 3]
-kor coordinates = (1, 2)
-mapa person = {"name": "Ternyx", "age": 25}
-void empty
-unin uninitialized
-```
-- Declaration: `fn function_name(parameters) { code }`
+- `fn function_name(parameters) { code }`
 - Example: `fn greet(name) { vokar("Hello, " + name) }`
 
-
+*Example Code*
+```
+{
+  kal x = 5
+  nexa y = 3.14
+  vix name = "Ternyx"
+  dual isAdmin = True
+  sek numbers = [1, 2, 3]
+  kor coordinates = (1, 2)
+  mapa person = {"name": "Ternyx", "age": 25}
+  void empty
+  unin uninitialized
+  
+  zhrak x > y:
+    vokar("x is greater")
+  koral:
+    vokar("y is greater")
+  
+  fn greet(name) 
+    vokar("Hello, " + name)
+  
+  
+  greet("Ternyx")
+}
+```
