@@ -55,7 +55,7 @@ Here are the Ternyx data types with new names:
 
 *Text Type*
 
-1. `vyx` (String): Sequences of characters, e.g., "hello", 'hello', etc.
+1. `vix` (String): Sequences of characters, e.g., "hello", 'hello', etc.
 
 *Boolean Type*
 
