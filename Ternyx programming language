@@ -80,7 +80,7 @@ Here are the Ternyx data types with new names:
 ```
 kal x = 5
 nexa y = 3.14
-vyx name = "Ternyx"
+vix name = "Ternyx"
 dual isAdmin = True
 sek numbers = [1, 2, 3]
 kor coordinates = (1, 2)
