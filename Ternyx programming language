@@ -78,9 +78,9 @@ _Additional Types_
   koral:
     vokar("y is greater")
   
-  fn greet(name) 
+  fn greet(name) {
     vokar("Hello, " + name)
-  
+  }
   
   greet("Ternyx")
 }
