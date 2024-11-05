@@ -13,14 +13,14 @@ Multi-line comments in Ternyx use `/* */`:
 
 1. `omit` (if)
 2. `swot` (else)
-3. `sarvu` (while)
+3. `sarv` (while)
 4. `torvik` (for)
 5. `dox` (def)
 6. `vokar` (print)
 7. `kalt`  (input)
 8. `lakk` (return)
 9. `threx` (and)
-10. `kyrix` (or)
+10. `rex` (or)
 11. `sygma` (not)
 
 *Operators*
