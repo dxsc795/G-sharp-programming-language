@@ -77,7 +77,7 @@ _Additional Types_
 
 *1. Print Function*
 ```
-fn print(message: string)
+fn print(message: vix)
   vokar(message)
 
 print("Hello, World!")
@@ -93,7 +93,7 @@ add(5, 3)
 
 *3. Greeting Function*
 ```
-fn greet(name: string)
+fn greet(name: vix)
   vokar("Hello, " + name + "!")
 
 greet("John")
