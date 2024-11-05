@@ -77,24 +77,45 @@ _Additional Types_
 
 *1. Print Function*
 ```
-fn print(message: vix)
-  vokar(message)
+fn print(message: vix){
+  vokar(message)}
 
 print("Hello, World!")
 ```
 
 *2. Addition Function*
 ```
-fn add(a: number, b: number)
-  vokar(a + b)
+fn add(a: number, b: number){
+  vokar(a + b)}
 
 add(5, 3)
 ```
 
 *3. Greeting Function*
 ```
-fn greet(name: vix)
-  vokar("Hello, " + name + "!")
+fn greet(name: vix){
+  vokar("Hello, " + name + "!")}
 
 greet("John")
-```
+
+Here's an example of a function in Ternyx:
+
+fn greet(vix name) {
+vokar("Hello, " + name)
+}
+
+fn add(kal x, kal y) {
+kal result = x + y
+vokar("Result: " + result)
+}
+
+greet("Emil")
+add(5, 3)
+
+This code defines two functions:
+
+1. `greet`: Prints a personalized greeting.
+2. `add`: Adds two numbers .
+
+The functions are called without wrapping in a larger program or loop.
+
