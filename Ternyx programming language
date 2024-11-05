@@ -64,65 +64,27 @@ _Additional Types_
 
 *Function Declaration*
 
-- `fn function_name(parameters) { code }`
-- Example: `fn greet(name) { vokar("Hello, " + name) }`
+- `dox function_name(parameters) { code }`
+- Example: `dox greet(name) { vokar(•Hello, • + name) }`
 
 *Example Code*
 ```
 
   kal x = 5
   nexa y = 3.14
-  vix name = "Ternyx"
+  vix name = •Ternyx•
   dual isAdmin = True
   sek numbers = [1, 2, 3]
   kor coordinates = (1, 2)
-  mapa person = {"name": "Ternyx", "age": 25}
+  mapa person = {•name•: •Ternyx•, •age•: 25}
   void empty
   unin uninitialized
   
   Here are some Ternyx function codes and examples:
-
-*1. Print Function*
-```
-fn print(message: vix){
-  vokar(message)}
-
-print("Hello, World!")
-```
-
-*2. Addition Function*
-```
-fn add(a: number, b: number){
-  vokar(a + b)}
-
-add(5, 3)
-```
-
-*3. Greeting Function*
-```
-fn greet(name: vix){
-  vokar("Hello, " + name + "!")}
-
-greet("John")
-
-Here's an example of a function in Ternyx:
-
-fn greet(vix name) {
-vokar("Hello, " + name)
+{
+ dox greet(name: vix){
+  vokar(•Hello, • + name + •!•)}
 }
+greet(•John•)
 
-fn add(kal x, kal y) {
-kal result = x + y
-vokar("Result: " + result)
-}
-
-greet("Emil")
-add(5, 3)
-
-This code defines two functions:
-
-1. `greet`: Prints a personalized greeting.
-2. `add`: Adds two numbers .
-
-The functions are called without wrapping in a larger program or loop.
 
