@@ -34,7 +34,7 @@ Multi-line comments in Ternyx use `/* */`:
 9. `<=` (less than or equal)
 10. `>=` (greater than or equal)
 11. `&&` (Logical AND)
-12. `| |` (Logical OR)
+12. `||` (Logical OR)
 13.  `!`  (Logical NOT)
 
 *Data Types*
