@@ -5,9 +5,7 @@ In Ternyx, `//` is used for single-line comments.
 
 Multi-line comments in Ternyx use `/* */`:
 
-- Code enclosed in `{}`.
-- Indentation: 3 spaces.
-- `?` symbol on the same line is ignored by the interpreter.
+- Code enclosed in `{}`.starting to stoping
 
 *Keywords*
 
