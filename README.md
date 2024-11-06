@@ -151,9 +151,3 @@ _Ternyx Standard Library (TSL) Proposal_
 1. `ternyx.util.log` - Log message
 2. `ternyx.util.debug` - Debug output
 3. `ternyx.util.time` - Get current time
-
-*Implementation*
-
-1. Write modules in Ternyx
-2. Use Ternyx's foreign function interface (FFI) for external library integration
-3. Test and document each module
