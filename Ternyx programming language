@@ -9,6 +9,55 @@ Multi-line comments in Ternyx use `/* */`:
 
 - Code enclosed in `{}`.starting to stoping
 
+*Control Flow*
+
+1. `cycle` (repeat)
+2. `skip` (continue)
+3. `halt` (exit)
+4. `resume` (resume execution)
+
+*Data Manipulation*
+
+1. `merge` (combine lists/tuples)
+2. `split` (divide strings/lists)
+3. `filter` (data filtering)
+4. `transform` (data mapping)
+
+*Error Handling*
+
+1. `try` (attempt execution)
+2. `catch` (handle exceptions)
+3. `throw` (raise exceptions)
+
+*Functions*
+
+1. `override` (function overriding)
+2. `extend` (function extension)
+3. `lambda` (anonymous functions)
+
+*Logic*
+
+1. `xor` (exclusive OR)
+2. `nor` (negated OR)
+3. `nand` (negated AND)
+
+*Operators*
+
+1. `**` (exponentiation)
+2. `//` (integer division)
+3. `%=` (modulus assignment)
+
+*Variables*
+
+1. `con` (constant declaration)
+2. `shared` (shared variables)
+
+*Miscellaneous*
+
+1. `sap` (module imports)
+2. `kap` (module exports)
+3. `debug` (debug mode)
+
 *Keywords*
 
 1. `omit` (if)
