@@ -101,3 +101,59 @@
 10. `Operator` → `>=` (greater than or equal)
 
 This grammar defines the structure of Ternyx programs, including statements, expressions, declarations, functions, and types.
+
+Designing a standard library for Ternyx involves identifying essential modules and functions to support various programming tasks.
+
+_Ternyx Standard Library (TSL) Proposal_
+
+*Core Modules*
+
+1. `(ternyx.io)` - Input/Output operations (file, console, network)
+2. `ternyx.math` - Mathematical functions (algebra, geometry, statistics)
+3. `ternyx.string` - String manipulation (parsing, formatting, encoding)
+4. `ternyx.collection` - Data structures (lists, maps, sets)
+5. `ternyx.util` - Utility functions (logging, debugging, timing)
+
+*Data Structures*
+
+1. `ternyx.list` - Dynamic arrays
+2. `ternyx.map` - Hash tables
+3. `ternyx.set` - Unordered sets
+4. `ternyx.queue` - First-In-First-Out (FIFO) queues
+5. `ternyx.stack` - Last-In-First-Out (LIFO) stacks
+
+*File I/O*
+
+1. `ternyx.file.read` - Read file contents
+2. `ternyx.file.write` - Write file contents
+3. `ternyx.file.append` - Append to file
+
+*Networking*
+
+1. `ternyx.net.tcp` - TCP socket operations
+2. `ternyx.net.udp` - UDP socket operations
+3. `ternyx.net.http` - HTTP client
+
+*Mathematical Functions*
+
+1. `ternyx.math.sin` - Sine
+2. `ternyx.math.cos` - Cosine
+3. `ternyx.math.sqrt` - Square root
+
+*String Manipulation*
+
+1. `ternyx.string.split` - Split string
+2. `ternyx.string.join` - Join strings
+3. `ternyx.string.format` - Format string
+
+*Utility Functions*
+
+1. `ternyx.util.log` - Log message
+2. `ternyx.util.debug` - Debug output
+3. `ternyx.util.time` - Get current time
+
+*Implementation*
+
+1. Write modules in Ternyx
+2. Use Ternyx's foreign function interface (FFI) for external library integration
+3. Test and document each module
