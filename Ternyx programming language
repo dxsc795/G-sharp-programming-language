@@ -1,7 +1,6 @@
 Ternyx Language Specification (Updated)
-
+vokar["hello this an example of Ternyx program"]
 *Syntax*
-1. Use periods (•) instead of quotation marks in Ternyx code.
 
 In Ternyx, `//` is used for single-line comments.
 
