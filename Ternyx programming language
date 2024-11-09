@@ -1,5 +1,7 @@
 Ternyx Language Specification (Updated)
-vokar["hello this an example of Ternyx program"]
+
+vokar[•hello this an example of Ternyx program•]
+
 *Syntax*
 
 In Ternyx, `//` is used for single-line comments.
