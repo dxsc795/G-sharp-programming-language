@@ -1,123 +1,102 @@
-I'll implement the changes.
+Here are 10 Ternyx programs
 
-*Ternyx Language Specification (Updated)*
-
-*Syntax and Semantics*
-
-- Consistent naming conventions: camelCase
-- Simplified comments: `//` (single-line), `/* */` (multi-line) replaced with `//` (single-line), `///` (multi-line)
-- Clarified code block syntax: indentation-based, with clear rules for scope
-
-*Data Types*
-
-- Added date and time types: `date`, `time`, `datetime`
-- Introduced nullable types: `?type` (e.g., `?kal`, `?nexa`)
-- Enhanced numeric types: unsigned integer types (`uint`), arbitrary-precision numeric type (`arb`)
-
-*Control Flow*
-
-- Added switch statement: `switch (expression) { ... }`
-- Enhanced loop constructs: foreach loop (`foreach (item in collection) { ... }`)
-
-*Functions*
-
-- Function overloading: allowed
-- Type inference: improved for function parameters and return types
-- Lambda expression syntax: simplified (`(params) => expression`)
-
-*Error Handling*
-
-- Enhanced error types: specific error types (e.g., `TypeError`, `ValueError`)
-- Improved try-catch syntax: simplified (`try { ... } catch (error) { ... }`)
-
-*Operators*
-
-- Added bitwise operators: `&`, `|`, `^`, `~`
-- Considered operator overloading: allowed for user-defined types
-
-*Miscellaneous*
-
-- Module system: introduced (`module`, `import`, `export`)
-- Macros or meta-programming: introduced (`macro`, `meta`)
-- Concurrency support: introduced (`async`, `await`)
-
-*Keywords*
-
-- `omit` -> `if`
-- `swot` -> `else`
-- `surge` -> `while`
-- `torvik` -> `for`
-- `dox` -> `def`
-- `vokar` -> `print`
-- `kalt` -> `input`
-- `fib` -> `return`
-- `threx` -> `and`
-- `flux` -> `or`
-- `sygma` -> `not`
-
-*Operators*
-
-- `+` (addition)
-- `-` (subtraction)
-- `*` (multiplication)
-- `/` (division)
-- `==` (equality)
-- `!=` (inequality)
-- `<` (less than)
-- `>` (greater than)
-- `<=` (less than or equal)
-- `>=` (greater than or equal)
-- `&&` (Logical AND)
-- `||` (Logical OR)
-- `!` (Logical NOT)
-- `&` (bitwise AND)
-- `|` (bitwise OR)
-- `^` (bitwise XOR)
-- `~` (bitwise NOT)
-
-*Data Types*
-
-- `kal` (Integer)
-- `nexa` (Float)
-- `date` (Date)
-- `time` (Time)
-- `datetime` (DateTime)
-- `?type` (Nullable type)
-- `uint` (Unsigned Integer)
-- `arb` (Arbitrary-precision numeric)
-- `vix` (String)
-- `dual` (Boolean)
-- `sek` (List)
-- `kor` (Tuple)
-- `mapa` (Dictionary)
-- `void` (Null)
-- `unin` (Undefined)
-
-*Function Declaration*
-
-`def function_name(parameters) { code }`
-
-*Example Code*
-
+_1. Hello World_
 ```
 ternyx
-// Import module
-import math
+vokar("Hello, World!")
+```
 
-// Define function
-def greet(name: vix) {
-  print("Hello, " + name + "!")
+_2. Basic Arithmetic_
+```
+ternyx
+kal x = 5
+nexa y = 3.14
+vokar(x + y)
+```
+
+_3. Conditional Statement_
+```
+ternyx
+kal x = 5
+if x > 10 {
+  vokar("x is greater than 10")
+} else {
+  vokar("x is less than or equal to 10")
 }
+```
 
-// Call function
+_4. Loop_
+```
+ternyx
+kal i = 0
+surge i < 5 {
+  vokar(i)
+  i += 1
+}
+```
+
+_5. Function_
+```
+ternyx
+dox greet(name: vix) {
+  vokar("Hello, " + name + "!")
+}
 greet("Ternyx")
+```
 
-// Use macro
+_6. Macro_
+```
+ternyx
 macro double(x) {
   x * 2
 }
+vokar(double(5))
+```
 
-// Use concurrency
-async function asyncExample() {
-  await print("Async example")
+_7. Concurrency_
+```
+ternyx
+async dox asyncExample() {
+  await vokar("Async example")
 }
+asyncExample()
+```
+
+_8. Data Structures_
+```
+ternyx
+sek numbers = [1, 2, 3]
+kor coordinates = (1, 2)
+mapa person = {name: "Ternyx", age: 25}
+vokar(numbers)
+vokar(coordinates)
+vokar(person)
+```
+
+_9. Error Handling_
+```
+ternyx
+try {
+  kal x = 5 / 0
+} catch (error) {
+  vokar("Error: " + error)
+}
+```
+
+_10. Module Import_
+```
+ternyx
+khetch math
+vokar(math.pi)
+```
+
+These programs demonstrate the updated syntax for:
+
+- Variables and data types
+- Control flow (if, else, surge)
+- Functions (dox)
+- Macros
+- Concurrency (async, await)
+- Data structures (sek, kor, mapa)
+- Error handling (try, catch)
+- Module imports (khetch)
