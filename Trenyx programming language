@@ -1,140 +1,123 @@
-Trenyx Language Specification (Updated)
+I'll implement the changes.
 
-vokar[•hello this an example of Trenyx program•]
+*Ternyx Language Specification (Updated)*
 
-*Syntax*
+*Syntax and Semantics*
 
-In Trenyx, `//` is used for single-line comments.
-
-Multi-line comments in Trenyx use `/* */`:
-
-- Code enclosed in `{}`.starting to stoping
-
-*Control Flow*
-
-1. `cycle` (repeat)
-2. `skip` (continue)
-3. `halt` (exit)
-4. `resume` (resume execution)
-
-*Data Manipulation*
-
-1. `merge` (combine lists/tuples)
-2. `split` (divide strings/lists)
-3. `filter` (data filtering)
-4. `transform` (data mapping)
-
-*Error Handling*
-
-1. `try` (attempt execution)
-2. `catch` (handle exceptions)
-3. `throw` (raise exceptions)
-
-*Functions*
-
-1. `override` (function overriding)
-2. `extend` (function extension)
-3. `lambda` (anonymous functions)
-
-*Logic*
-
-1. `xor` (exclusive OR)
-2. `nor` (negated OR)
-3. `nand` (negated AND)
-
-*Operators*
-
-1. `**` (exponentiation)
-2. `//` (integer division)
-3. `%=` (modulus assignment)
-
-*Variables*
-
-1. `con` (constant declaration)
-2. `shared` (shared variables)
-
-*Miscellaneous*
-
-1. `sap` (module imports)
-2. `kap` (module exports)
-3. `debug` (debug mode)
-
-*Keywords*
-
-1. `omit` (if)
-2. `swot` (else)
-3. `surge` (while)
-4. `torvik` (for)
-5. `dox` (def)
-6. `vokar` (print)
-7. `kalt`  (input)
-8. `fib` (return)
-9. `threx` (and)
-10. `flux` (or)
-11. `sygma` (not)
-
-*Operators*
-
-1. `+` (addition)
-2. `-` (subtraction)
-3. `*` (multiplication)
-4. `/` (division)
-5. `==` (equality)
-6. `!=` (inequality)
-7. `<` (less than)
-8. `>` (greater than)
-9. `<=` (less than or equal)
-10. `>=` (greater than or equal)
-11. `&&` (Logical AND)
-12. `||` (Logical OR)
-13.  `!`  (Logical NOT)
+- Consistent naming conventions: camelCase
+- Simplified comments: `//` (single-line), `/* */` (multi-line) replaced with `//` (single-line), `///` (multi-line)
+- Clarified code block syntax: indentation-based, with clear rules for scope
 
 *Data Types*
 
-_Numeric Types_
-1. `kal` (Integer)
-2. `nexa` (Float)
+- Added date and time types: `date`, `time`, `datetime`
+- Introduced nullable types: `?type` (e.g., `?kal`, `?nexa`)
+- Enhanced numeric types: unsigned integer types (`uint`), arbitrary-precision numeric type (`arb`)
 
-_Text Type_
-1. `vix` (String)
+*Control Flow*
 
-_Boolean Type_
-1. `dual` (Boolean)
+- Added switch statement: `switch (expression) { ... }`
+- Enhanced loop constructs: foreach loop (`foreach (item in collection) { ... }`)
 
-_Sequence Types_
-1. `sek` (List)
-2. `kor` (Tuple)
+*Functions*
 
-_Mapping Type_
-1. `mapa` (Dictionary)
+- Function overloading: allowed
+- Type inference: improved for function parameters and return types
+- Lambda expression syntax: simplified (`(params) => expression`)
 
-_Additional Types_
-1. `void` (Null)
-2. `unin` (Undefined)
+*Error Handling*
+
+- Enhanced error types: specific error types (e.g., `TypeError`, `ValueError`)
+- Improved try-catch syntax: simplified (`try { ... } catch (error) { ... }`)
+
+*Operators*
+
+- Added bitwise operators: `&`, `|`, `^`, `~`
+- Considered operator overloading: allowed for user-defined types
+
+*Miscellaneous*
+
+- Module system: introduced (`module`, `import`, `export`)
+- Macros or meta-programming: introduced (`macro`, `meta`)
+- Concurrency support: introduced (`async`, `await`)
+
+*Keywords*
+
+- `omit` -> `if`
+- `swot` -> `else`
+- `surge` -> `while`
+- `torvik` -> `for`
+- `dox` -> `def`
+- `vokar` -> `print`
+- `kalt` -> `input`
+- `fib` -> `return`
+- `threx` -> `and`
+- `flux` -> `or`
+- `sygma` -> `not`
+
+*Operators*
+
+- `+` (addition)
+- `-` (subtraction)
+- `*` (multiplication)
+- `/` (division)
+- `==` (equality)
+- `!=` (inequality)
+- `<` (less than)
+- `>` (greater than)
+- `<=` (less than or equal)
+- `>=` (greater than or equal)
+- `&&` (Logical AND)
+- `||` (Logical OR)
+- `!` (Logical NOT)
+- `&` (bitwise AND)
+- `|` (bitwise OR)
+- `^` (bitwise XOR)
+- `~` (bitwise NOT)
+
+*Data Types*
+
+- `kal` (Integer)
+- `nexa` (Float)
+- `date` (Date)
+- `time` (Time)
+- `datetime` (DateTime)
+- `?type` (Nullable type)
+- `uint` (Unsigned Integer)
+- `arb` (Arbitrary-precision numeric)
+- `vix` (String)
+- `dual` (Boolean)
+- `sek` (List)
+- `kor` (Tuple)
+- `mapa` (Dictionary)
+- `void` (Null)
+- `unin` (Undefined)
 
 *Function Declaration*
 
-- `dox function_name(parameters) { code }`
-- Example: `dox greet(name) { vokar(•Hello, • + name) }`
+`def function_name(parameters) { code }`
 
 *Example Code*
-```
 
-  kal x = 5
-  nexa y = 3.14
-  vix name = •Ternyx•
-  dual isAdmin = True
-  sek numbers = [1, 2, 3]
-  kor coordinates = (1, 2)
-  mapa person = {•name•: •Trenyx•, •age•: 25}
-  void empty
-  unin uninitialized
-  
-  Here are some Ternyx function codes and examples:
-{
- dox greet(name: vix){
-  vokar(•Hello, • + name + •!•)}
+```
+ternyx
+// Import module
+import math
+
+// Define function
+def greet(name: vix) {
+  print("Hello, " + name + "!")
 }
 
+// Call function
+greet("Ternyx")
 
+// Use macro
+macro double(x) {
+  x * 2
+}
 
+// Use concurrency
+async function asyncExample() {
+  await print("Async example")
+}
