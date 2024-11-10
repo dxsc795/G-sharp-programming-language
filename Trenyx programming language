@@ -1,12 +1,12 @@
-Ternyx Language Specification (Updated)
+Trenyx Language Specification (Updated)
 
-vokar[•hello this an example of Ternyx program•]
+vokar[•hello this an example of Trenyx program•]
 
 *Syntax*
 
-In Ternyx, `//` is used for single-line comments.
+In Trenyx, `//` is used for single-line comments.
 
-Multi-line comments in Ternyx use `/* */`:
+Multi-line comments in Trenyx use `/* */`:
 
 - Code enclosed in `{}`.starting to stoping
 
@@ -126,7 +126,7 @@ _Additional Types_
   dual isAdmin = True
   sek numbers = [1, 2, 3]
   kor coordinates = (1, 2)
-  mapa person = {•name•: •Ternyx•, •age•: 25}
+  mapa person = {•name•: •Trenyx•, •age•: 25}
   void empty
   unin uninitialized
   
