@@ -1,4 +1,4 @@
-*Ternyx Grammar*
+*trenyx Grammar*
 
 *Terminals*
 
@@ -100,54 +100,54 @@
 9. `Operator` → `<=` (less than or equal)
 10. `Operator` → `>=` (greater than or equal)
 
-This grammar defines the structure of Ternyx programs, including statements, expressions, declarations, functions, and types.
+This grammar defines the structure of Trenyx programs, including statements, expressions, declarations, functions, and types.
 
-Designing a standard library for Ternyx involves identifying essential modules and functions to support various programming tasks.
+Designing a standard library for Trenyx involves identifying essential modules and functions to support various programming tasks.
 
-_Ternyx Standard Library (TSL) Proposal_
+_Trenyx Standard Library (TSL) Proposal_
 
 *Core Modules*
 
-1. `(ternyx.io)` - Input/Output operations (file, console, network)
-2. `ternyx.math` - Mathematical functions (algebra, geometry, statistics)
-3. `ternyx.string` - String manipulation (parsing, formatting, encoding)
-4. `ternyx.collection` - Data structures (lists, maps, sets)
-5. `ternyx.util` - Utility functions (logging, debugging, timing)
+1. `(trenyx.io)` - Input/Output operations (file, console, network)
+2. `trenyx.math` - Mathematical functions (algebra, geometry, statistics)
+3. `trenyx.string` - String manipulation (parsing, formatting, encoding)
+4. `trenyx.collection` - Data structures (lists, maps, sets)
+5. `trenyx.util` - Utility functions (logging, debugging, timing)
 
 *Data Structures*
 
-1. `ternyx.list` - Dynamic arrays
-2. `ternyx.map` - Hash tables
-3. `ternyx.set` - Unordered sets
-4. `ternyx.queue` - First-In-First-Out (FIFO) queues
-5. `ternyx.stack` - Last-In-First-Out (LIFO) stacks
+1. `trenyx.list` - Dynamic arrays
+2. `trenyx.map` - Hash tables
+3. `trenyx.set` - Unordered sets
+4. `trenyx.queue` - First-In-First-Out (FIFO) queues
+5. `trenyx.stack` - Last-In-First-Out (LIFO) stacks
 
 *File I/O*
 
-1. `ternyx.file.read` - Read file contents
-2. `ternyx.file.write` - Write file contents
-3. `ternyx.file.append` - Append to file
+1. `trenyx.file.read` - Read file contents
+2. `trenyx.file.write` - Write file contents
+3. `trenyx.file.append` - Append to file
 
 *Networking*
 
-1. `ternyx.net.tcp` - TCP socket operations
-2. `ternyx.net.udp` - UDP socket operations
-3. `ternyx.net.http` - HTTP client
+1. `trenyx.net.tcp` - TCP socket operations
+2. `trenyx.net.udp` - UDP socket operations
+3. `trenyx.net.http` - HTTP client
 
 *Mathematical Functions*
 
-1. `ternyx.math.sin` - Sine
-2. `ternyx.math.cos` - Cosine
-3. `ternyx.math.sqrt` - Square root
+1. `trenyx.math.sin` - Sine
+2. `trenyx.math.cos` - Cosine
+3. `trenyx.math.sqrt` - Square root
 
 *String Manipulation*
 
-1. `ternyx.string.split` - Split string
-2. `ternyx.string.join` - Join strings
-3. `ternyx.string.format` - Format string
+1. `trenyx.string.split` - Split string
+2. `trenyx.string.join` - Join strings
+3. `trenyx.string.format` - Format string
 
 *Utility Functions*
 
-1. `ternyx.util.log` - Log message
-2. `ternyx.util.debug` - Debug output
-3. `ternyx.util.time` - Get current time
+1. `trenyx.util.log` - Log message
+2. `trenyx.util.debug` - Debug output
+3. `trenyx.util.time` - Get current time
