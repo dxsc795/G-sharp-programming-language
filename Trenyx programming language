@@ -86,7 +86,7 @@ try {
 _10. Module Import_
 ```
 ternyx
-khetch math
+into math
 vokar(math.pi)
 ```
 
@@ -99,4 +99,4 @@ These programs demonstrate the updated syntax for:
 - Concurrency (async, await)
 - Data structures (sek, kor, mapa)
 - Error handling (try, catch)
-- Module imports (khetch)
+- Module imports (into)
