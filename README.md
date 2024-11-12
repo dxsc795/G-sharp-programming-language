@@ -1,6 +1,6 @@
 
 
-Ternyx Language Specification
+Guawa Language Specification
 
 *Syntax and Semantics*
 
@@ -100,7 +100,7 @@ Ternyx Language Specification
 *Example Code*
 
 ```
-ternyx
+Guawa
 // Into module
 into math
 
