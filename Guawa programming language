@@ -1,1 +1,89 @@
 
+
+1. Hello World
+
+```
+guawa
+vokar "Hello, World!"
+```
+
+1. Variables
+
+```
+guawa
+kal x = 5
+vix name = "Ternyx"
+vokar "Name:", name, "Age:", x
+```
+
+1. Conditional Statement
+
+```
+guawa
+kal x = 5
+if x > 10 « 
+  vokar "x is greater than 10"
+» else « 
+  vokar "x is less than or equal to 10"
+»
+```
+
+1. Loop
+
+```
+guawa
+torvik (kal i = 0; i < 5; i++) « 
+  vokar i
+»
+```
+
+1. Function
+
+```
+guawa
+def dox greet(vix name) « 
+  vokar "Hello, " + name + "!"
+»
+greet("Ternyx")
+```
+
+1. Array Operations
+
+```
+guawa
+sek fruits = ["apple", "banana", "cherry"]
+vokar fruits[0] 
+fruits.surge("orange")
+vokar fruits.length 
+```
+
+1. Object Creation
+
+```
+guawa
+mapa person = « 
+  vix name = "Ternyx",
+  kal age = 25
+»
+vokar person.name 
+```
+
+1. Macro
+
+```
+guawa
+macro kalt double(kal x) « 
+  x * 2
+»
+vokar double(5) 
+```
+
+1. Async/Await
+
+```
+guawa
+async dox asyncExample() « 
+  await vokar "Async example"
+»
+asyncExample()
+```
