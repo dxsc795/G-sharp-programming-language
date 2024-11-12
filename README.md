@@ -106,11 +106,11 @@ into math
 
 // Define function
 def greet(name: vix) «
-  print(‹Hello, › + name + ‹!›)
+  print"Hello, " + name + "!")
 »
 
 // Call function
-greet(‹Ternyx›)
+greet('Ternyx")
 
 // Use macro
 macro double(x) «
