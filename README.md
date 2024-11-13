@@ -38,7 +38,7 @@ Guawa Language Specification
 
 *Operators*
 
-- Added bitwise operators: `&`, `|`, `^`, `~`
+- Added bitwise operators: `&`, `|`, `^`, `?`
 - Considered operator overloading: allowed for user-defined types
 
 *Miscellaneous*
@@ -78,8 +78,8 @@ Guawa Language Specification
 - `!` (Logical NOT)
 - `&` (bitwise AND)
 - `|` (bitwise OR)
-- `?` (bitwise XOR)
-- `??` (bitwise NOT)
+- `^` (bitwise XOR)
+- `?` (bitwise NOT)
 *Data Types*
 
 - `kal` (Integer)
@@ -98,31 +98,3 @@ Guawa Language Specification
 - `void` (Null)
 - `unin` (Undefined)
 
-*Function Declaration*
-
-`def function_name(parameters) { code }`
-
-*Example Code*
-
-```
-Guawa
-// Into module
-into math
-
-// Define function
-def greet(name: vix) {
-  print"Hello, " + name + "!")
-}
-
-// Call function
-greet('Ternyx")
-
-// Use macro
-macro double(x) {
-  x * 2
-}
-
-// Use concurrency
-async function asyncExample() {
-  await print(‹Async example›)
-}
