@@ -80,6 +80,7 @@ Guawa Language Specification
 - `|` (bitwise OR)
 - `^` (bitwise XOR)
 - `?` (bitwise NOT)
+
 *Data Types*
 
 - `kal` (Integer)
