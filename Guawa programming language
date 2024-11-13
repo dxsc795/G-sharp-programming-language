@@ -1,89 +1,59 @@
+Here are a few simple Guawa programs:
 
+*Program 1: Hello World*
+vokar("Hello, World!")
 
-1. Hello World
+*Program 2: Ask Name*
+vokar("What's your name?")
+vix name = kalt()
+vokar("Hello, " + name)
 
-```
-guawa
-vokar "Hello, World!"
-```
+*Program 3: Add Numbers*
+vokar("Enter first number:")
+kal num1 = kalt()
+vokar("Enter second number:")
+kal num2 = kalt()
+vokar("Result: " + num1 + num2)
 
-1. Variables
+Here is a simple Guawa program that takes user input:
 
-```
-guawa
-kal x = 5
-vix name = "Ternyx"
-vokar "Name:", name, "Age:", x
-```
+vokar("Enter your name: ")
+vix name = kalt()
+vokar("Hello, " + name)
 
-1. Conditional Statement
+Here are a few more simple Guawa programs:
 
-```
-guawa
-kal x = 5
-if x > 10 « 
-  vokar "x is greater than 10"
-» else « 
-  vokar "x is less than or equal to 10"
-»
-```
+_Program 1: Guessing Game_
+vokar("Guess a number between 1 and 10: ")
+kal guess = kalt()
+if guess == 5~
+ vokar("You won!")
+else~
+ vokar("Try again!")
 
-1. Loop
+_Program 2: Rock, Paper, Scissors_
+vokar("Enter rock, paper, or scissors: ")
+vix choice = kalt()
+vix computer = "rock"
+if choice == computer~
+ vokar("It's a tie!")
+else if choice == "rock" and computer == "scissors"~
+ vokar("You win!")
+else~
+ vokar("Computer wins!")
 
-```
-guawa
-torvik (kal i = 0; i < 5; i++) « 
-  vokar i
-»
-```
-
-1. Function
-
-```
-guawa
-def dox greet(vix name) « 
-  vokar "Hello, " + name + "!"
-»
-greet("Ternyx")
-```
-
-1. Array Operations
-
-```
-guawa
-sek fruits = ["apple", "banana", "cherry"]
-vokar fruits[0] 
-fruits.surge("orange")
-vokar fruits.length 
-```
-
-1. Object Creation
-
-```
-guawa
-mapa person = « 
-  vix name = "Ternyx",
-  kal age = 25
-»
-vokar person.name 
-```
-
-1. Macro
-
-```
-guawa
-macro kalt double(kal x) « 
-  x * 2
-»
-vokar double(5) 
-```
-
-1. Async/Await
-
-```
-guawa
-async dox asyncExample() « 
-  await vokar "Async example"
-»
-asyncExample()
-```
+_Program 3: Calculator_
+vokar("Enter first number: ")
+kal num1 = kalt()
+vokar("Enter second number: ")
+kal num2 = kalt()
+vokar("Enter +, -, _, or /: ")
+vix op = kalt()
+if op == "+"~
+ vokar("Result: " + num1 + num2)
+else if op == "-"~
+ vokar("Result: " + num1 - num2)
+else if op == "_"~
+ vokar("Result: " + num1 * num2)
+else if op == "/"~
+ vokar("Result: " + num1 / num2)
