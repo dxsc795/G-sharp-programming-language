@@ -6,6 +6,16 @@ _Syntax and Semantics_
 - Simplified comments: `//` (single-line), `///` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
+the lines starting with `?` are comments and are ignored by the Guawa interpreter
+
+*Tab (or four spaces):*
+
+In guawa, indentation (using tabs or four spaces) is used to denote block-level structure. This means that you need to indent your code to indicate where a block of code begins and ends.
+
+*wave (~):*
+
+In guawa, the wave (~) is used to indicate the start of a block of code. It's often used in conjunction with indentation to define the structure of your code
+
 _Keywords_
 
 - `omit` - conditional statement
