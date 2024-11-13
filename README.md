@@ -16,7 +16,7 @@ Guawa Language Specification
 
 *Control Flow*
 
-- Added switch statement: `switch (expression) { ... }`
+- Added match statement: `match (expression) { ... }`
 - Enhanced loop constructs: foreach loop (`foreach (item in collection) { ... }`)
 
 *Functions*
