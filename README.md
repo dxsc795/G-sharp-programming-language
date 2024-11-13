@@ -14,21 +14,27 @@ Guawa Language Specification
 - Introduced nullable types: `?type` (e.g., `?kal`, `?nexa`)
 - Enhanced numeric types: unsigned integer types (`uint`), arbitrary-precision numeric type (`arb`)
 
-*Control Flow*
+*Conditional Statements*
 
-- Added match statement: `match (expression) { ... }`
-- Enhanced loop constructs: foreach loop (`foreach (item in collection) { ... }`)
+- If Statement: `omit condition: statement`
+- Else Statement: `swot: statement`
+- If-Else Statement: `omit condition: statement1 swot: statement2`
+
+*Loops*
+
+- While Loop: `surge condition: statement`
+- For Loop: `torvik item in collection: statement`
 
 *Functions*
 
-- Function overloading: allowed
-- Type inference: improved for function parameters and return types
-- Lambda expression syntax: simplified (`(params) => expression`)
+- Function Declaration: `dox function_name(parameters): statement`
+- Function Call: `function_name(arguments)`
+- Return Statement: `fib value`
 
-*Error Handling*
+*Input/Output*
 
-- Enhanced error types: specific error types (e.g., `TypeError`, `ValueError`)
-- Improved try-catch syntax: simplified (`try { ... } catch (error) { ... }`)
+- Print Statement: `vokar message`
+- Input Statement: `kalt prompt`
 
 *Operators*
 
@@ -113,9 +119,9 @@ def greet(name: vix) {
 greet('Ternyx")
 
 // Use macro
-macro double(x) «
+macro double(x) {
   x * 2
-»
+}
 
 // Use concurrency
 async function asyncExample() {
