@@ -1,53 +1,88 @@
-Guawa:Powerful coding in every bite
+Guawa language:powefull code in every bite 
 
-Guawa Language Specification
-
-*Syntax and Semantics*
+_Syntax and Semantics_
 
 - Consistent naming conventions: camelCase
-- Simplified comments: `//` (single-line), `/* */` (multi-line) replaced with `//` (single-line), `///` (multi-line)
-- Clarified code block syntax: indentation-based, with clear rules for scope
+- Simplified comments: `//` (single-line), `///` (multi-line)
+- Indentation-based code block syntax with clear rules for scope
 
-*Miscellaneous*
+_Keywords_
 
-- Module system: introduced (`module`, `into`, `exto`)
+- `omit` - conditional statement
+- `swot` - else clause
+- `surge` - while loop
+- `torvik` - for loop
+- `dox` - function definition
+- `vokar` - print function
+- `kalt` - input function
+- `sygma` - return statement
+- `switch` - switch statement
+- `try` - try block
+- `catch` - catch block
 
-*Keywords*
+_Operators_
 
-- `omit` -> `if`
-- `swot` -> `else`
-- `surge` -> `while`
-- `torvik` -> `for`
-- `dox` -> `def`
-- `vokar` -> `print`
-- `kalt` -> `input`
-- `sygma` -> `return`
+- `+` - addition
+- `-` - subtraction
+- `*` - multiplication
+- `/` - division
+- `==` - equality
+- `!=` - inequality
+- `<` - less than
+- `>` - greater than
+- `<=` - less than or equal
+- `>=` - greater than or equal
+- `&&` - logical AND
+- `||` - logical OR
+- `!` - logical NOT
 
-*Operators*
+_Data Types_
 
-- `+` (addition)
-- `-` (subtraction)
-- `*` (multiplication)
-- `/` (division)
-- `==` (equality)
-- `!=` (inequality)
-- `<` (less than)
-- `>` (greater than)
-- `<=` (less than or equal)
-- `>=` (greater than or equal)
-- `&&` (Logical AND)
-- `||` (Logical OR)
-- `!` (Logical NOT)
+- `kal` - integer
+- `nexa` - float
+- `vix` - string
+- `dual` - boolean
+- `sek` - list
+- `kor` - tuple
+- `mapa` - dictionary
+- `void` - null
+- `unin` - undefined
+- `graph` - graph data structure
+- `tree` - tree data structure
+- `heap` - heap data structure
+- `set` - set data structure
 
-*Data Types*
+_Control Structures_
 
-- `kal` (Integer)
-- `nexa` (Float)
-- `vix` (String)
-- `dual` (Boolean)
-- `sek` (List)
-- `kor` (Tuple)
-- `mapa` (Dictionary)
-- `void` (Null)
-- `unin` (Undefined)
+- Conditional statements: `omit`, `swot`
+- Loops: `surge`, `torvik`
+- Switch statements: `switch`
+- Try-catch blocks: `try`, `catch`
 
+_Functions and Modules_
+
+- Function definition: `dox`
+- Function overloading: supported
+- Anonymous functions and lambda expressions: supported
+- Module system: `module`, `into`, `exto`
+- Foreign function interface (FFI): supported
+
+_Security and Memory Management_
+
+- Memory safety features: garbage collection, reference counting, smart pointers
+- Secure coding practices: secure string handling, secure data storage, secure networking
+
+_Networking and Input/Output_
+
+- Networking capabilities: TCP/IP, UDP, and other networking protocols
+- Input/output capabilities: file management, console input/output, graphical user interface (GUI) support
+
+_Cryptography and Hashing_
+
+- Cryptographic primitives: AES, RSA, elliptic curve cryptography
+- Hashing algorithms: SHA-256, SHA-3, BLAKE2
+
+_Interoperability and Extensibility_
+
+- Foreign function interface (FFI): supported
+- Dynamic loading of modules: supported
