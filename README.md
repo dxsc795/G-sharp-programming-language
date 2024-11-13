@@ -11,7 +11,7 @@ Guawa Language Specification
 *Data Types*
 
 - Added date and time types: `date`, `time`, `datetime`
-- Introduced nullable types: `?type` (e.g., `?kal`, `?nexa`)
+- Introduced nullable types: `?type` (e.g., `kal`, `nexa`)
 - Enhanced numeric types: unsigned integer types (`uint`), arbitrary-precision numeric type (`arb`)
 
 *Conditional Statements*
@@ -88,7 +88,7 @@ Guawa Language Specification
 - `date` (Date)
 - `time` (Time)
 - `datetime` (DateTime)
-- `?type` (Nullable type)
+- `type` (Nullable type)
 - `uint` (Unsigned Integer)
 - `arb` (Arbitrary-precision numeric)
 - `vix` (String)
