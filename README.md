@@ -16,8 +16,8 @@ Guawa Language Specification
 
 *Control Flow*
 
-- Added switch statement: `switch (expression) « ... »`
-- Enhanced loop constructs: foreach loop (`foreach (item in collection) « ... »`)
+- Added switch statement: `switch (expression) { ... }`
+- Enhanced loop constructs: foreach loop (`foreach (item in collection) { ... }`)
 
 *Functions*
 
@@ -28,7 +28,7 @@ Guawa Language Specification
 *Error Handling*
 
 - Enhanced error types: specific error types (e.g., `TypeError`, `ValueError`)
-- Improved try-catch syntax: simplified (`try « ... » catch (error) « ... »`)
+- Improved try-catch syntax: simplified (`try { ... } catch (error) { ... }`)
 
 *Operators*
 
@@ -95,7 +95,7 @@ Guawa Language Specification
 
 *Function Declaration*
 
-`def function_name(parameters) « code »`
+`def function_name(parameters) { code }`
 
 *Example Code*
 
@@ -105,9 +105,9 @@ Guawa
 into math
 
 // Define function
-def greet(name: vix) «
+def greet(name: vix) {
   print"Hello, " + name + "!")
-»
+}
 
 // Call function
 greet('Ternyx")
@@ -118,6 +118,6 @@ macro double(x) «
 »
 
 // Use concurrency
-async function asyncExample() «
+async function asyncExample() {
   await print(‹Async example›)
-»
+}
