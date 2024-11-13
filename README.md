@@ -78,9 +78,8 @@ Guawa Language Specification
 - `!` (Logical NOT)
 - `&` (bitwise AND)
 - `|` (bitwise OR)
-- `^` (bitwise XOR)
-- `~` (bitwise NOT)
-
+- `?` (bitwise XOR)
+- `??` (bitwise NOT)
 *Data Types*
 
 - `kal` (Integer)
