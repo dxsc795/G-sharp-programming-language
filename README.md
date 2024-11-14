@@ -27,8 +27,14 @@ _Keywords_
 - `kalt` - input function
 - `sygma` - return statement
 - `switch` - switch statement
+
 - `try` - try block
 - `catch` - catch block
+`break` -> `exitloop`
+ `continue` -> `skip`
+  `pass` -> `nop`
+  `yield` -> `produce`
+ `for` -> `iterate`
 
 _Operators_
 
@@ -69,30 +75,42 @@ _Control Structures_
 - Switch statements: `switch`
 - Try-catch blocks: `try`, `catch`
 
-_Functions and Modules_
+_Functions_
 
-- Function definition: `dox`
-- Function overloading: supported
-- Anonymous functions and lambda expressions: supported
-- Module system: `module`, `into`, `exto`
-- Foreign function interface (FFI): supported
+1. `def` -> `dox`
+2. `lambda` -> `anonymous`
+3. `nonlocal` -> `outer`
+4. `global` -> `universal`
 
-_Security and Memory Management_
+_Classes and Objects_
 
-- Memory safety features: garbage collection, reference counting, smart pointers
-- Secure coding practices: secure string handling, secure data storage, secure networking
+1. `class` -> `type`
+2. `self` -> `this`
+3. `__init__` -> `initialize`
+4. `__str__` -> `tostring`
+5. `__repr__` -> `torepr`
 
-_Networking and Input/Output_
+_Exceptions_
 
-- Networking capabilities: TCP/IP, UDP, and other networking protocols
-- Input/output capabilities: file management, console input/output, graphical user interface (GUI) support
+1. `try` -> `attempt`
+2. `except` -> `catch`
+3. `finally` -> `ensure`
+4. `raise` -> `throw`
+5. `assert` -> `verify`
 
-_Cryptography and Hashing_
+_Modules and Packages_
 
-- Cryptographic primitives: AES, RSA, elliptic curve cryptography
-- Hashing algorithms: SHA-256, SHA-3, BLAKE2
+1. `import` -> `load`
+2. `eximport` -> `load ex`
+3. `from` -> `loadfrom`
+4. `as` -> `loas`
+5. `package` -> `namespace`
 
-_Interoperability and Extensibility_
+_Other_
 
-- Foreign function interface (FFI): supported
-- Dynamic loading of modules: supported
+1. `del` -> `remove`
+2. `exec` -> `execute`
+3. `eval` -> `evaluate`
+4. `with` -> `using`
+5. `async` -> `asynchronous`
+6. `await` -> `waitfor`
