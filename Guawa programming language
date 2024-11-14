@@ -37,9 +37,9 @@ vix choice = kalt()
 vix computer = "rock"
 omit choice == computer~
  vokar("It's a tie!")
-swot omit choice == "rock" and computer == "scissors"~
+swot choice == "rock" and computer == "scissors"~
  vokar("You win!")
-swot~
+switch~
  vokar("Computer wins!")
 
 _Program 3: Calculator_
@@ -51,9 +51,9 @@ vokar("Enter +, -, _, or /: ")
 vix op = kalt()
 omit op == "+"~
  vokar("Result: " + num1 + num2)
-swot omit op == "-"~
+swot op == "-"~
  vokar("Result: " + num1 - num2)
-swot omit op == "_"~
+switch op == "_"~
  vokar("Result: " + num1 * num2)
-swot omit op == "/"~
+switch op == "/"~
  vokar("Result: " + num1 / num2)
