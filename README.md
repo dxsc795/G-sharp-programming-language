@@ -86,9 +86,9 @@ _Classes and Objects_
 
 1. `class` -> `type`
 2. `self` -> `this`
-3. `__init__` -> `initialize`
-4. `__str__` -> `tostring`
-5. `__repr__` -> `torepr`
+3. `__init__` -> `lize`
+4. `__str__` -> `tost`
+5. `__repr__` -> `tore`
 
 _Exceptions_
 
