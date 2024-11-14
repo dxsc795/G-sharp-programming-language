@@ -27,14 +27,13 @@ _Keywords_
 - `kalt` - input function
 - `sygma` - return statement
 - `switch` - switch statement
-
 - `try` - try block
 - `catch` - catch block
-`break` -> `exitloop`
- `continue` -> `skip`
-  `pass` -> `nop`
-  `yield` -> `produce`
- `for` -> `iterate`
+-`break` -> `exitloop`
+-`continue` -> `skip`
+-`pass` -> `nop`
+-`yield` -> `produce`
+-`for` -> `iterate`
 
 _Operators_
 
