@@ -3,7 +3,7 @@ Guawa language:powefull code in every bite
 _Syntax and Semantics_
 
 - Consistent naming conventions: camelCase
-- Simplified comments: `//` (single-line), `///` (multi-line)
+- Simplified comments: `#` (single-line), `##` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
 the lines starting with `?` are comments and are ignored by the Guawa interpreter
@@ -29,15 +29,10 @@ _Keywords_
 - `switch` - switch statement
 - `try` - try block
 - `catch` - catch block
-- 
 -`break` -> `exitloop`
-
 -`continue` -> `skip`
-
 -`pass` -> `nop`
-
 -`yield` -> `produce`
-
 -`for` -> `iterate`
 
 _Operators_
@@ -55,6 +50,15 @@ _Operators_
 - `&&` - logical AND
 - `||` - logical OR
 - `!` - logical NOT
+- `**` - exponentiation
+- `!!` - floor division
+- `%` - modulus
+- `&` - bitwise AND
+- `|` - bitwise OR
+- `^` - bitwise XOR
+- `:` - bitwise NOT
+- `<<` - left shift
+- `>>` - right shift
 
 _Data Types_
 
@@ -71,6 +75,8 @@ _Data Types_
 - `tree` - tree data structure
 - `heap` - heap data structure
 - `set` - set data structure
+- `matrix` - matrix data structure
+- `vector` - vector data structure
 
 _Control Structures_
 
@@ -79,42 +85,59 @@ _Control Structures_
 - Switch statements: `switch`
 - Try-catch blocks: `try`, `catch`
 
-_Functions_
+*Functions*
 
-1. `def` -> `dox`
-2. `lambda` -> `anonymous`
-3. `nonlocal` -> `outer`
-4. `global` -> `universal`
+Def -> `dox`
+Lambda -> `Lamb`
+Nonlocal -> `outer`
+Global -> `universal`
 
-_Classes and Objects_
+*Classes and Objects*
 
-1. `class` -> `type`
-2. `self` -> `this`
-3. `__init__` -> `lize`
-4. `__str__` -> `tost`
-5. `__repr__` -> `tore`
+- `type` - type definition
+- `this` - this parameter
+- `lize` - constructor method
+- `tost` - string representation
+  method
+- `tore` - representation method
 
-_Exceptions_
+*Exceptions*
 
-1. `try` -> `attempt`
-2. `except` -> `catch`
-3. `finally` -> `ensure`
-4. `raise` -> `throw`
-5. `assert` -> `verify`
+- `attempt` - try block
+- `catch` - except block
+- `ensure` - finally block
+- `throw` - raise statement
+- `verify` - assert statement
 
-_Modules and Packages_
+*Modules and Packages*
 
-1. `import` -> `load`
-2. `eximport` -> `load ex`
-3. `from` -> `loadfrom`
-4. `as` -> `loas`
-5. `package` -> `namespace`
+- `load` - import statement
+- `load ex` - import statement
+- `loadfrom` - from statement
+- `loas` - as statement
+- `namespace` - package statement
 
-_Other_
+*Other*
 
-1. `del` -> `remove`
-2. `exec` -> `execute`
-3. `eval` -> `evaluate`
-4. `with` -> `using`
-5. `async` -> `asynchronous`
-6. `await` -> `waitfor`
+- `remove` - delete statement
+- `execute` - execute statement
+- `eval` - evaluate statement
+- `using` - with statement
+- `async` - asynchronous statement
+- `waitfor` - await statement
+
+*New Additions*
+
+- `matrix` - matrix data structure
+- `vector` - vector data structure
+- `graph` - graph data structure
+- `tree` - tree data structure
+- `heap` - heap data structure
+- `set` - set data structure
+- `async` - asynchronous statement
+- `await` - await statement
+- `try` - try block
+- `catch` - catch block
+- `finally` - finally block
+- `raise` - raise statement
+- `assert` - assert statement
