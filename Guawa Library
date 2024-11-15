@@ -1,0 +1,84 @@
+
+*Standard Libraries*
+
+1. `guawa.std` - Standard library for Guawa
+2. `guawa.math` - Mathematical functions library
+3. `guawa.string` - String manipulation library
+4. `guawa.array` - Array manipulation library
+5. `guawa.object` - Object manipulation library
+6. `guawa.function` - Function manipulation library
+
+*Data Structures Libraries*
+
+1. `guawa.list` - Linked list library
+2. `guawa.stack` - Stack library
+3. `guawa.queue` - Queue library
+4. `guawa.tree` - Tree library
+5. `guawa.graph` - Graph library
+6. `guawa.heap` - Heap library
+7. `guawa.set` - Set library
+8. `guawa.map` - Map library
+
+*File System Libraries*
+
+1. `guawa.fs` - File system library
+2. `guawa.path` - Path manipulation library
+3. `guawa.file` - File manipulation library
+4. `guawa.dir` - Directory manipulation library
+
+*Networking Libraries*
+
+1. `guawa.http` - HTTP library
+2. `guawa.https` - HTTPS library
+3. `guawa.socket` - Socket library
+4. `guawa.tcp` - TCP library
+5. `guawa.udp` - UDP library
+
+*Database Libraries*
+
+1. `guawa.db` - Database library
+2. `guawa.sql` - SQL library
+3. `guawa.nosql` - NoSQL library
+4. `guawa.mongodb` - MongoDB library
+5. `guawa.mysql` - MySQL library
+6. `guawa.postgresql` - PostgreSQL library
+
+*Graphics and GUI Libraries*
+
+1. `guawa.graphics` - Graphics library
+2. `guawa.gui` - GUI library
+3. `guawa.opengl` - OpenGL library
+4. `guawa.svg` - SVG library
+5. `guawa.canvas` - Canvas library
+
+*Machine Learning and AI Libraries*
+
+1. `guawa.tensor` - Tensor library
+2. `guawa.neural` - Neural network library
+3. `guawa.nlp` - Natural language processing library
+4. `(link unavailable)` - Machine learning library
+5. `(link unavailable)` - Artificial intelligence library
+
+*Security Libraries*
+
+1. `guawa.crypto` - Cryptography library
+2. `guawa.hash` - Hash library
+3. `guawa.signature` - Signature library
+4. `guawa.encryption` - Encryption library
+5. `guawa.decryption` - Decryption library
+
+*Testing and Debugging Libraries*
+
+1. `guawa.test` - Testing library
+2. `guawa.debug` - Debugging library
+3. `guawa.log` - Logging library
+4. `guawa.assert` - Assertion library
+5. `guawa.mock` - Mocking library
+
+*Utilities Libraries*
+
+1. `guawa.utils` - Utilities library
+2. `guawa.config` - Configuration library
+3. `guawa.env` - Environment library
+4. `guawa.fsutil` - File system utility library
+5. `guawa.stringutil` - String utility library
