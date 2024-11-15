@@ -20,6 +20,7 @@ _Keywords_
 
 - `omit` - conditional statement
 - `swot` - else clause
+- `wot` - elif
 - `lift` - switch statement 
 - `surge` - while loop
 - `torvik` - for loop
@@ -141,3 +142,21 @@ Global -> `universal`
 - `finally` - finally block
 - `raise` - raise statement
 - `assert` - assert statement
+- 
+In the Guawa programming language, the `lift` statement is used similarly to a `switch` statement in other languages. It allows you to perform different actions based on the value of a variable or expression.
+
+Here's an example of how you might use the `lift` statement in Guawa:
+```
+vokar("What is your choice? ")
+kal choice = kalt()
+lift choice
+  case 1:
+    vokar("You chose option 1!")
+  case 2:
+    vokar("You chose option 2!")
+  case 3:
+    vokar("You chose option 3!")
+  default:
+    vokar("Invalid choice!")
+```
+In this example, the `lift` statement is used to execute different blocks of code based on the value of the `choice` variable.
