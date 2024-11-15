@@ -20,13 +20,13 @@ _Keywords_
 
 - `omit` - conditional statement
 - `swot` - else clause
+- `lift` - elif statement 
 - `surge` - while loop
 - `torvik` - for loop
 - `dox` - function definition
 - `vokar` - print function
 - `kalt` - input function
 - `sygma` - return statement
-- `switch` - switch statement
 - `try` - try block
 - `catch` - catch block
 -`break` -> `exitloop`
