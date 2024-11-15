@@ -20,7 +20,7 @@ _Keywords_
 
 - `omit` - conditional statement
 - `swot` - else clause
-- `lift` - elif statement 
+- `lift` - switch statement 
 - `surge` - while loop
 - `torvik` - for loop
 - `dox` - function definition
