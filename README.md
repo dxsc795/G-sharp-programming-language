@@ -3,7 +3,7 @@ Guawa language:powefull code in every bite
 _Syntax and Semantics_
 
 - Consistent naming conventions: camelCase
-- Simplified comments: `#` (single-line), `##` (multi-line)
+- Simplified comments: `?` (single-line), `/*,*\` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
 the lines starting with `?` are comments and are ignored by the Guawa interpreter
