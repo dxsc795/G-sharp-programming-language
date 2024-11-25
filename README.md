@@ -26,15 +26,20 @@ _Keywords_
 - `torvik` - for loop
 - `dox` - function definition
 - `vokar` - print function
-- `kalt` - input function
-- `sygma` - return statement
-- `try` - try block
-- `catch` - catch block
--`break` -> `exitloop`
--`continue` -> `skip`
--`pass` -> `nop`
--`yield` -> `produce`
+-`catch` - catch block
+-`sygma` - return statement
 -`for` -> `iterate`
+-`continue` -> `skip`
+- `kalt` - input function
+-`break` -> `exitloop
+-`try` - try block
+-`yield` -> `produce`
+-`pass` -> `nop`
+- generics
+- protocols
+- exceptions
+- read
+- 
 
 _Operators_
 
