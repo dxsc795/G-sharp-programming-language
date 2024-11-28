@@ -1,3 +1,31 @@
+*Functions*
+
+- `phys_read(addr, len)` - read physical memory
+- `phys_write(addr, data)` - write physical memory
+- `io_read(port)` - read from I/O port
+- `io_write(port, data)` - write to I/O port
+- `irq_enable(irq_num)` - enable interrupt request
+- `irq_disable(irq_num)` - disable interrupt request
+- `dma_transfer(src, dst, len)` - perform direct memory access transfer
+
+*Example Code*
+
+Here's an example code snippet that demonstrates how to use the `phys` keyword and `phys_read` function to access physical memory:
+
+```
+guawa
+phys mem_addr = 0x10000000;
+data = phys_read(mem_addr, 4);
+print(data);
+```
+
+This code reads 4 bytes from physical memory address `0x10000000` and prints the result.
+
+*Warning*
+
+Direct access to hardware components can be potentially hazardous and may cause system instability or damage. Use these features with caution and only when necessary.
+
+
 A few simple programs in Guawa:
 
 *Program 1: Guessing Game*
