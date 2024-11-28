@@ -1,47 +1,42 @@
-Guawa language:powefull code in every bite 
+Here is a formatted document of the Guawa programming language syntax:
 
-_Syntax and Semantics_
+*Guawa Programming Language*
+
+*Syntax and Semantics*
 
 - Consistent naming conventions: camelCase
-- Simplified comments: `?` (single-line), `/*,*\` (multi-line)
+- Simplified comments: `?` (single-line), `/*,*/` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
-the lines starting with `?` are comments and are ignored by the Guawa interpreter
-
-*Tab (or four spaces):*
-
-In guawa, indentation (using tabs or four spaces) is used to denote block-level structure. This means that you need to indent your code to indicate where a block of code begins and ends.
-
-*wave (~):*
-
-In guawa, the wave (~) is used to indicate the start of a block of code. It's often used in conjunction with indentation to define the structure of your code
-
-_Keywords_
+*Keywords*
 
 - `omit` - conditional statement
 - `swot` - else clause
 - `wot` - elif
-- `lift` - switch statement 
+- `lift` - switch statement
 - `surge` - while loop
 - `torvik` - for loop
 - `dox` - function definition
 - `vokar` - print function
--`catch` - catch block
--`sygma` - return statement
--`for` -> `iterate`
--`continue` -> `skip`
+- `catch` - catch block
+- `sygma` - return statement
+- `for` -> `iterate`
+- `continue` -> `skip`
 - `kalt` - input function
--`break` -> `exitloop
--`try` - try block
--`yield` -> `produce`
--`pass` -> `nop`
-- generics
-- protocols
-- exceptions
-- read
-- 
+- `break` -> `exitloop`
+- `try` - try block
+- `yield` -> `produce`
+- `pass` -> `nop`
+- `generics`
+- `protocols`
+- `exceptions`
+- `read`
+- `phys` - physical memory access
+- `io` - input/output operations
+- `irq` - interrupt request handling
+- `dma` - direct memory access
 
-_Operators_
+*Operators*
 
 - `+` - addition
 - `-` - subtraction
@@ -66,7 +61,7 @@ _Operators_
 - `<<` - left shift
 - `>>` - right shift
 
-_Data Types_
+*Data Types*
 
 - `kal` - integer
 - `nexa` - float
@@ -84,7 +79,7 @@ _Data Types_
 - `matrix` - matrix data structure
 - `vector` - vector data structure
 
-_Control Structures_
+*Control Structures*
 
 - Conditional statements: `omit`, `swot`
 - Loops: `surge`, `torvik`
@@ -93,18 +88,17 @@ _Control Structures_
 
 *Functions*
 
-Def -> `dox`
-Lambda -> `Lamb`
-Nonlocal -> `outer`
-Global -> `universal`
+- Def -> `dox`
+- Lambda -> `Lamb`
+- Nonlocal -> `outer`
+- Global -> `universal`
 
 *Classes and Objects*
 
 - `type` - type definition
 - `this` - this parameter
 - `lize` - constructor method
-- `tost` - string representation
-  method
+- `tost` - string representation method
 - `tore` - representation method
 
 *Exceptions*
@@ -148,20 +142,3 @@ Global -> `universal`
 - `raise` - raise statement
 - `assert` - assert statement
 - 
-In the Guawa programming language, the `lift` statement is used similarly to a `switch` statement in other languages. It allows you to perform different actions based on the value of a variable or expression.
-
-Here's an example of how you might use the `lift` statement in Guawa:
-```
-vokar("What is your choice? ")
-kal choice = kalt()
-lift choice
-  case 1:
-    vokar("You chose option 1!")
-  case 2:
-    vokar("You chose option 2!")
-  case 3:
-    vokar("You chose option 3!")
-  default:
-    vokar("Invalid choice!")
-```
-In this example, the `lift` statement is used to execute different blocks of code based on the value of the `choice` variable.
