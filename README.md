@@ -112,7 +112,7 @@ Here is a formatted document of the Guawa programming language syntax:
 *Modules and Packages*
 
 - `load` - import statement
-- `load ex` - import statement
+- `exload` - export statement
 - `loadfrom` - from statement
 - `loas` - as statement
 - `namespace` - package statement
