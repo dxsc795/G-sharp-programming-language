@@ -39,9 +39,15 @@ _Keywords_
 - `irq` - Interrupt requesthandling
 - `dma` - Direct memory access 
 - `Vocal init` - Initialize the speech recognition and text-to-speech engines
-- `Vocal say <text>` - Convert text to speech
-- `Vocal listen <variable>` - Convert speech to text and store it in a variable
-- `Vocal exit` - Exit the speech recognition and text-to-speech engines
+
+- `Thread` or `Concurrent` for multithreading and concurrency
+- `Network` or `Http` for networking and HTTP requests
+- `Database` or `Storage` for database interactions and data storage
+- `Error` or `Exception` for error handling and exceptions
+- `Type` or `Enum` for type definitions and enumerations
+- `Module` or `Import` for module imports and dependencies
+- `Test` or `Assert` for testing and assertions
+  
 *Operators*
 
 - `+` - addition
