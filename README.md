@@ -37,8 +37,11 @@ _Keywords_
 - `phys` - Physical memory access
 - `io` - Input/output operations
 - `irq` - Interrupt requesthandling
-- `dma` - Direct memory access
-
+- `dma` - Direct memory access 
+- `Vocal init` - Initialize the speech recognition and text-to-speech engines
+- `Vocal say <text>` - Convert text to speech
+- `Vocal listen <variable>` - Convert speech to text and store it in a variable
+- `Vocal exit` - Exit the speech recognition and text-to-speech engines
 *Operators*
 
 - `+` - addition
