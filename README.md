@@ -10,31 +10,34 @@ Here is a formatted document of the Guawa programming language syntax:
 
 *Keywords*
 
-- `omit` - conditional statement
-- `vokar` - else clause
-- `swot` - elif
-- `lift` - switch statement
-- `surge` - while loop
-- `torvik` - for loop
-- `dox` - function definition
-- `disply` - print function
-- `catch` - catch block
-- `sygma` - return statement
-- `for` -> `iterate`
-- `continue` -> `skip`
-- `kalt` - input function
-- `break` -> `exitloop`
-- `try` - try block
-- `yield` -> `produce`
-- `pass` -> `nop`
-- `generics`
-- `protocols`
-- `exceptions`
-- `read`
-- `phys` - physical memory access
-- `io` - input/output operations
-- `irq` - interrupt request handling
-- `dma` - direct memory access
+Here is the corrected version:
+
+_Keywords_
+
+- `omit` - Conditional statement
+- `vokar` - Else clause
+- `swot` - Elif statement
+- `lift` - Switch statement
+- `surge` - While loop
+- `torvik` - For loop
+- `dox` - Function definition
+- `disply` - Print function
+- `catch` - Catch block
+- `sygma` - Return statement
+- `skip` - Continue statement
+- `kalt` - Input function
+- `exitloop` - Break statement
+- `try` - Try block
+- `produce` - Yield statement 
+- `nop` - Pass statement
+- `generics` - Generics
+- `protocols` - Protocols
+- `exceptions` - Exceptions
+- `read` - Read function
+- `phys` - Physical memory access
+- `io` - Input/output operations
+- `irq` - Interrupt requesthandling
+- `dma` - Direct memory access
 
 *Operators*
 
@@ -48,9 +51,9 @@ Here is a formatted document of the Guawa programming language syntax:
 - `>` - greater than
 - `<=` - less than or equal
 - `>=` - greater than or equal
-- `&&` - logical AND
-- `||` - logical OR
-- `!` - logical NOT
+- `and` - logical AND
+- `or` - logical OR
+- `not` - logical NOT
 - `**` - exponentiation
 - `!!` - floor division
 - `%` - modulus
