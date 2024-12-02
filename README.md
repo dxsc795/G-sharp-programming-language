@@ -11,13 +11,13 @@ Here is a formatted document of the Guawa programming language syntax:
 *Keywords*
 
 - `omit` - conditional statement
-- `swot` - else clause
-- `wot` - elif
+- `vokar` - else clause
+- `swot` - elif
 - `lift` - switch statement
 - `surge` - while loop
 - `torvik` - for loop
 - `dox` - function definition
-- `vokar` - print function
+- `disply` - print function
 - `catch` - catch block
 - `sygma` - return statement
 - `for` -> `iterate`
@@ -141,4 +141,48 @@ Here is a formatted document of the Guawa programming language syntax:
 - `finally` - finally block
 - `raise` - raise statement
 - `assert` - assert statement
-- 
+
+
+Here are all the keywords we've discussed so far for the Guawa programming language:
+
+*Text-to-Speech Keywords*
+
+1. `Vocal` - Convert text to speech.
+2. `Emotion` - Convey emotions through speech.
+3. `Modulate` - Modulate the voice pitch and volume.
+
+*Artificial Intelligence/Machine Learning Keywords*
+
+1. `Learn` - Train a machine learning model.
+2. `Predict` - Make predictions using a trained model.
+
+*Internet of Things (IoT) Keywords*
+
+1. `Connect` - Connect to a device.
+2. `Send` - Send data to a connected device.
+
+*Graphics Keywords*
+
+1. `Shape` - Draw a shape.
+2. `Color` - Set the color.
+
+*Audio Keywords*
+
+1. `Beat` - Generate a beat.
+2. `Melody` - Generate a melody.
+
+*Security Keywords*
+
+1. `Encrypt` - Encrypt data.
+2. `Decrypt` - Decrypt data.
+
+*Gaming Keywords*
+
+1. `Game` - Create a new game.
+2. `Score` - Add points to the score.
+
+*Miscellaneous Keywords*
+
+1. `Gesture` - Perform a gesture.
+2. `Face` - Display a facial expression.
+3. `Translate` - Translate text.
