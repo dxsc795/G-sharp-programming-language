@@ -5,12 +5,11 @@ Here is a formatted document of the Guawa programming language syntax:
 *Syntax and Semantics*
 
 - Consistent naming conventions: camelCase
-- Simplified comments: `?` (single-line), `/*,*/` (multi-line)
+- Simplified comments: `?` (single-line), `/*,*\` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
 *Keywords*
 
-Here is the corrected version:
 
 _Keywords_
 
