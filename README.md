@@ -1,3 +1,6 @@
+HI AM EMIL BINOY I MADE G## FOR ALL IN ONE PROGRAMING LANGUAGE 
+
+
 Here is a formatted document of the G## programming language syntax:
 
 *G## Programming Language*
