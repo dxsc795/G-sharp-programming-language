@@ -14,13 +14,13 @@ Here is a formatted document of the Guawa programming language syntax:
 _Keywords_
 
 - `omit` - Conditional statement
-- `vokar` - Else clause
+- `elv` - Else clause
 - `swot` - Elif statement
 - `lift` - Switch statement
 - `surge` - While loop
 - `torvik` - For loop
 - `dox` - Function definition
-- `disply` - Print function
+- `vokar` - Print function
 - `catch` - Catch block
 - `sygma` - Return statement
 - `skip` - Continue statement
