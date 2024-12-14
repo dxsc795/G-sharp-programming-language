@@ -15,8 +15,8 @@ Here's an example code snippet that demonstrates how to use the `phys` keyword a
 ```
 guawa
 phys mem_addr = 0x10000000;
-data = phys_read(mem_addr, 4);
-print(data);
+data = phys_read(mem_addr, 4)
+print(data)
 ```
 
 This code reads 4 bytes from physical memory address `0x10000000` and prints the result.
