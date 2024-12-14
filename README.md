@@ -8,8 +8,7 @@ Here is a formatted document of the G## programming language syntax:
 - Simplified comments: `?` (single-line), `/*,*\` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 
-*Keywords*
-
+In G##, the tilde symbol `~` is used to separate the control flow statement from the code block that follows. This helps to improve code readability and makes it easier to write concise and expressive code
 
 _Keywords_
 
@@ -46,6 +45,8 @@ _Keywords_
 - `Type` or `Enum` for type definitions and enumerations
 - `Module` or `Import` for module imports and dependencies
 - `Test` or `Assert` for testing and assertions
+
+`exhaust` - developers can explicitly manage resources and prevent memory leaks or other resource-related issues
   
 *Operators*
 
