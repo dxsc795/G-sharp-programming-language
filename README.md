@@ -21,7 +21,7 @@ _Keywords_
 - `dox` - Function definition
 - `vokar` - Print function
 - `catch` - Catch block
-- `sygma` - Return statement
+- `return` - Return statement
 - `skip` - Continue statement
 - `kalt` - Input function
 - `exitloop` - Break statement
@@ -95,7 +95,7 @@ _Keywords_
 
 - Conditional statements: `omit`, `swot`
 - Loops: `surge`, `torvik`
-- Switch statements: `switch`
+- Switch statements: `swit`
 - Try-catch blocks: `try`, `catch`
 
 *Functions*
