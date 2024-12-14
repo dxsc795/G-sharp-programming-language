@@ -1,6 +1,6 @@
-Here is a formatted document of the Guawa programming language syntax:
+Here is a formatted document of the G## programming language syntax:
 
-*Guawa Programming Language*
+*G## Programming Language*
 
 *Syntax and Semantics*
 
