@@ -1,3 +1,15 @@
+
+`exhaust` is a keyword used to indicate that a resource is being consumed or depleted.
+
+Example:
+
+kal myResource = allocateResource();
+exhaust myResource;  // consume 
+the resource
+
+
+
+
 *Functions*
 
 - `phys_read(addr, len)` - read physical memory
