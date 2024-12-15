@@ -8,6 +8,19 @@ Syntax and Semantics
 - Indentation-based code block syntax with clear rules for scope
 - The tilde symbol `~` is used to separate the control flow statement from the code block that follows.
 
+In G##, `!!` and `%` are both modulus operators, but they behave slightly differently:
+
+!! is the integer modulus operator. It returns the remainder of the division of the dividend by the divisor, where both dividend and divisor are integers.
+
+% is the floating-point modulus operator. It returns the remainder of the division of the dividend by the divisor, where either dividend or divisor is a floating-point number.
+
+Here's an example:
+
+x = 17 !! 5  # x = 2
+y = 17 % 5  # y = 2.0
+
+In this example, both `!!` and `%` return the same result, but the data type of the result is different. The result of `!!` is an integer, while the result of `%` is a floating-point number.
+
 Keywords
 _Control Structures_
 - `omit` - Conditional statement
