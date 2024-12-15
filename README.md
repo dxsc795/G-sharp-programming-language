@@ -73,7 +73,7 @@ Operators
 - Arithmetic operators: `+`, `-`, `*`, `/`, `**`, `!!`, `%`
 - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
 - Logical operators: `and`, `or`, `not`
-- Bitwise operators: `&`, `|`, `^`, `:`, `<<`, `>>`
+- Bitwise operators: `&`, `|`, `^`, `<<`, `>>`
 
 Text-to-Speech Keywords
 1. `Vocal` - Convert text to speech.
