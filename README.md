@@ -12,7 +12,7 @@ Keywords
 _Control Structures_
 - `omit` - Conditional statement
 - `elv` - Else clause
-- `swot` - Elif statement
+- `el` - Elif statement
 - `lift` - Switch statement
 - `suo` - While loop
 - `torvik` - For loop
