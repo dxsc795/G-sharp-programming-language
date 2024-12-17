@@ -29,7 +29,8 @@ In G##, the `**` operator is used for exponentiation. It raises the first operan
 
 Here's an example:
 
-x = 2 ** 3  # x = 8
+x = 2 ** 3     x = 8
+
 Vokar(x)
 
 In mathematics
