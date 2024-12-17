@@ -547,14 +547,14 @@ elv #
 Loop
 ```
 x = 0
-surge x < 10 ~
+surge x < 10 #
   vokar(x)
   x = x + 1
 ```
 
 Function
 ```
-dox greet(name) ~
+dox greet(name) #
   vokar("Hello, " + name + "!")
 
 greet("Emil")
@@ -562,12 +562,12 @@ greet("Emil")
 
 Class
 ```
-type Person ~
-  lize(name, age) ~
+type Person #
+  lize(name, age) #
     this.name = name
     this.age = age
 
-  sayHello() ~
+  sayHello() #
     vokar("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
 
 person = new Person("Emil", 30)
