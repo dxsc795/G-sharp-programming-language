@@ -18,9 +18,13 @@ In G##, `!!` and `%` are both modulus operators, but they behave slightly differ
 
 Here's an example:
 
-x = 17 !! 5   x = 2
+x = 17 !! 5   
 
-y = 17 % 5    y = 2.0
+x = 2
+
+y = 17 % 5  
+
+y = 2.0
 
 In this example, both `!!` and `%` return the same result, but the data type of the result is different. The result of `!!` is an integer, while the result of `%` is a floating-point number.
 
@@ -29,7 +33,9 @@ In G##, the `**` operator is used for exponentiation. It raises the first operan
 
 Here's an example:
 
-x = 2 ** 3     x = 8
+x = 2 ** 3    
+
+x = 8
 
 Vokar(x)
 
