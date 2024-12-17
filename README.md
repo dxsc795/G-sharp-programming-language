@@ -44,8 +44,12 @@ In mathematics
 
 In this example, the `**` operator raises 2 to the power of 3, resulting in 8.
 
+{A1, A2}kalt{2}(ente the first number)(ente the second number)
+
 Keywords
 _Control Structures_
+- `kalt` - input
+- `vokar` - print
 - `omit` - Conditional statement
 - `elv` - Else clause
 - `el` - Elif statement
