@@ -8,7 +8,7 @@ Syntax and Semantics
 - Consistent naming conventions: camelCase
 - Simplified comments: `//` (single-line), `/* *\` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
-- The tilde symbol `~` is used to separate the control flow statement from the code block that follows.
+- The tilde symbol `#` is used to separate the control flow statement from the code block that follows.
 
 In G##, `!!` and `%` are both modulus operators, but they behave slightly differently:
 
@@ -18,9 +18,9 @@ In G##, `!!` and `%` are both modulus operators, but they behave slightly differ
 
 Here's an example:
 
-x = 17 !! 5  # x = 2
+x = 17 !! 5   x = 2
 
-y = 17 % 5  # y = 2.0
+y = 17 % 5    y = 2.0
 
 In this example, both `!!` and `%` return the same result, but the data type of the result is different. The result of `!!` is an integer, while the result of `%` is a floating-point number.
 
@@ -143,9 +143,9 @@ _Conditional Statements_
 G## supports conditional statements using the `omit` keyword.
 
 ```
-omit condition ~
+omit condition #
   // code to execute if condition is true
-elv ~
+elv #
   // code to execute if condition is false
 ```
 
@@ -153,10 +153,10 @@ _Loops_
 G## supports loops using the `surge` and `torvik` keywords.
 
 ```
-surge condition ~
+surge condition #
   // code to execute repeatedly while condition is true
 
-torvik variable in iterable ~
+torvik variable in iterable #
   // code to execute for each item in the iterable
 ```
 
@@ -164,12 +164,12 @@ _Switch Statements_
 G## supports switch statements using the `lift` keyword.
 
 ```
-lift expression ~
-  case value1 ~
+lift expression #
+  case value1 #
     // code to execute if expression equals value1
-  case value2 ~
+  case value2 #
     // code to execute if expression equals value2
-  default ~
+  default #
     // code to execute if expression does not equal any of the cases
 ```
 
@@ -185,7 +185,7 @@ _Function Definitions_
 In G##, functions are defined using the `dox` keyword.
 
 ```
-dox functionName(parameters) ~
+dox functionName(parameters) #
   // function body
 ```
 
@@ -202,7 +202,7 @@ _Lambda Functions_
 G## also supports lambda functions, which are small anonymous functions.
 
 ```
-Lamb(parameters) ~
+Lamb(parameters) #
   // lambda function body
 ```
 
@@ -211,7 +211,7 @@ _Nonlocal Functions_
 Nonlocal functions are functions that are defined inside another function.
 
 ```
-outer functionName(parameters) ~
+outer functionName(parameters) #
   // nonlocal function body
 ```
 
@@ -220,7 +220,7 @@ _Global Functions_
 Global functions are functions that are defined outside of any other function.
 
 ```
-universal functionName(parameters) ~
+universal functionName(parameters) #
   // global function body
 ```
 
@@ -229,7 +229,7 @@ _Function Examples_
 Here is an example of a simple function:
 
 ```
-dox greet(name) ~
+dox greet(name) #
   vokar("Hello, " + name + "!")
 
 greet("Emil")
@@ -245,7 +245,7 @@ _Class Definitions_
 In G##, classes are defined using the `type` keyword.
 
 ```
-type ClassName ~
+type ClassName #
   // class body
 ```
 
@@ -254,7 +254,7 @@ _Class Constructors_
 Class constructors are special methods that are called when an object is created.
 
 ```
-lize(parameters) ~
+lize(parameters) #
   // constructor body
 ```
 
@@ -263,7 +263,7 @@ _Class Methods_
 Class methods are functions that belong to a class.
 
 ```
-methodName(parameters) ~
+methodName(parameters) #
   // method body
 ```
 
@@ -288,12 +288,12 @@ _Object Examples_
 Here is an example of a simple class:
 
 ```
-type Person ~
-  lize(name, age) ~
+type Person #
+  lize(name, age) #
     this.name = name
     this.age = age
 
-  sayHello() ~
+  sayHello() #
     vokar("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
 
 person = new Person("Emil", 30)
@@ -309,11 +309,11 @@ _Try-Catch Blocks_
 G## supports try-catch blocks for exception handling.
 
 ```
-attempt ~
+attempt #
   // code that may throw an exception
-catch exception ~
+catch exception #
   // code to handle the exception
-ensure ~
+ensure #
   // code to always execute, regardless of whether an exception was thrown
 ```
 
@@ -338,9 +338,9 @@ _Exception Examples_
 Here is an example of a try-catch block:
 
 ```
-attempt ~
+attempt #
   x = 5 / 0
-catch exception ~
+catch exception #
   vokar("An error occurred: " + exception.message)
 ```
 
@@ -369,7 +369,7 @@ _Package Management_
 G## supports package management using the `namespace` keyword.
 
 ```
-namespace packageName ~
+namespace packageName #
   // package contents
 ```
 
@@ -425,7 +425,7 @@ Text-to-Speech
 G## provides a built-in text-to-speech system that allows you to convert text into spoken words.
 
 ```
-Vocal text ~
+Vocal text #
   // text to be converted to speech
 ```
 
@@ -434,10 +434,10 @@ Artificial Intelligence/Machine Learning
 G## provides a built-in machine learning system that allows you to train and use machine learning models.
 
 ```
-Learn model ~
+Learn model #
   // training data for the model
 
-Predict model ~
+Predict model #
   // input data for the model
 ```
 
@@ -446,10 +446,10 @@ Internet of Things (IoT)
 G## provides a built-in IoT system that allows you to connect to and control devices.
 
 ```
-Connect device ~
+Connect device #
   // device to be connected
 
-Send device ~
+Send device #
   // data to be sent to the device
 ```
 
@@ -458,10 +458,10 @@ Graphics
 G## provides a built-in graphics system that allows you to create and manipulate graphics.
 
 ```
-Shape shape ~
+Shape shape #
   // shape to be created
 
-Color color ~
+Color color #
   // color to be used
 ```
 
@@ -470,10 +470,10 @@ Audio
 G## provides a built-in audio system that allows you to create and manipulate audio.
 
 ```
-Beat beat ~
+Beat beat #
   // beat to be created
 
-Melody melody ~
+Melody melody #
   // melody to be created
 ```
 
@@ -482,10 +482,10 @@ Security
 G## provides a built-in security system that allows you to encrypt and decrypt data.
 
 ```
-Encrypt data ~
+Encrypt data #
   // data to be encrypted
 
-Decrypt data ~
+Decrypt data #
   // data to be decrypted
 ```
 
@@ -494,10 +494,10 @@ Gaming
 G## provides a built-in gaming system that allows you to create and play games.
 
 ```
-Game game ~
+Game game #
   // game to be created
 
-Score score ~
+Score score #
   // score to be updated
 ```
 
@@ -506,13 +506,13 @@ Miscellaneous
 G## provides a built-in miscellaneous system that allows you to perform various tasks.
 
 ```
-Gesture gesture ~
+Gesture gesture #
   // gesture to be performed
 
-Face face ~
+Face face #
   // face to be displayed
 
-Translate text ~
+Translate text #
   // text to be translated
 ```
 
@@ -531,9 +531,9 @@ vokar("Hello, World!")
 Conditional Statement
 ```
 x = 5
-if x > 10 ~
+omit x > 10 #
   vokar("x is greater than 10")
-elv ~
+elv #
   vokar("x is less than or equal to 10")
 ```
 
