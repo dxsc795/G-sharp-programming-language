@@ -6,7 +6,7 @@ G## Programming Language
 
 Syntax and Semantics
 - Consistent naming conventions: camelCase
-- Simplified comments: `?` (single-line), `* *` (multi-line)
+- Simplified comments: `?` (single-line), `[* *]` (multi-line)
 - Indentation-based code block syntax with clear rules for scope
 - The symbol `#` is used to separate the control flow statement from the code block that follows.
 
