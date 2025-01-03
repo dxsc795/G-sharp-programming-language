@@ -56,7 +56,7 @@ _Control Structures_
 - `elv` - Else clause
 - `el` - Elif statement
 - `lift` - Switch statement
-- `suo` - While loop
+- `surge` - While loop
 - `torvik` - For loop
 
 _Functions_
