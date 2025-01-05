@@ -1,6 +1,6 @@
 G## created by Emil Binoy
 
-The FIT "Flexible In Time" concept suggests that Jetliner
+The FIT "Flexible In Time" concept suggests that Jetliner exciting two line by two line
 
 
 Here is the revised document:
