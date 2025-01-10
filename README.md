@@ -49,7 +49,7 @@ In this example, the `**` operator raises 2 to the power of 3, resulting in 8.
 
 excited 2 input in a single line code
 
-{kal} number1 kalt::"ente the first number" "ente the second number"
+kal=number1 kalt"ente the first number" "ente the second number"
 
 Keywords
 _Control Structures_
