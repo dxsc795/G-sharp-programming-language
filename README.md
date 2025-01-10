@@ -556,7 +556,7 @@ elv #
 Loop
 ```
 x = 0
-surge x < 10 #
+cycle x < 10 #
   vokar(x)
   x = x + 1
 ```
