@@ -59,8 +59,8 @@ _Control Structures_
 - `elv` - Else clause
 - `el` - Elif statement
 - `lift` - Switch statement
-- `surge` - While loop
-- `torvik` - For loop
+- `cycle` - While loop
+- `walk` - For loop
 
 _Functions_
 - `dox` - Function definition
@@ -166,13 +166,13 @@ elv #
 ```
 
 _Loops_
-G## supports loops using the `surge` and `torvik` keywords.
+G## supports loops using the `cycle` and `walk` keywords.
 
 ```
-surge condition #
+cycle condition #
   // code to execute repeatedly while condition is true
 
-torvik variable in iterable #
+walk variable in iterable #
   // code to execute for each item in the iterable
 ```
 
