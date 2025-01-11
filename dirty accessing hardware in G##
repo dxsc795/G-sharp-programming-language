@@ -1,0 +1,50 @@
+Here's a possible implementation of dirty accessing hardware in G##:
+
+Memory-Mapped I/O (MMIO)
+- `mmio` keyword: allows developers to access memory-mapped I/O registers
+- `mmio_addr` function: returns the memory address of a specific MMIO register
+
+Example:
+```
+g##
+mmio uint32_t* reg = mmio_addr(0x80000000);
+*reg = 0x12345678;
+```
+
+Port I/O
+- `port` keyword: allows developers to access I/O ports
+- `port_in` and `port_out` functions: read and write data from/to I/O ports
+
+Example:
+```
+g##
+port uint8_t data = port_in(0x3F8);
+port_out(0x3F8, data);
+```
+
+DMA
+- `dma` keyword: allows developers to perform DMA operations
+- `dma_transfer` function: initiates a DMA transfer
+
+Example:
+```
+g##
+dma_transfer(0x10000000, 0x80000000, 1024);
+```
+
+Interrupt Handling
+- `interrupt` keyword: allows developers to define custom interrupt handlers
+- `interrupt_handler` function: registers a custom interrupt handler
+
+Example:
+```
+g##
+interrupt void my_handler() {
+  // Handle interrupt
+}
+interrupt_handler(IRQ_NUMBER, my_handler);
+```
+
+These are just some examples of how dirty accessing hardware could be implemented in G##. The actual implementation would depend on the language's design goals and the target platform.
+
+Please let me know if you'd like me to elaborate or modify anything.
