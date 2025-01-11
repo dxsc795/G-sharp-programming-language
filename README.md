@@ -135,72 +135,7 @@ Data Types
 - `vector` - Vector data structure
 
 
-Integer Types
-*1. `bix8`*
-- Size: 8 bits (1 byte)
-- Range: 0 to 255
-- Usage: Small, unsigned integer values.
 
-*2. `bix16`*
-- Size: 16 bits (2 bytes)
-- Range: -32,768 to 32,767
-- Usage: Small to medium-sized integer values.
-
-*3. `bix32`*
-- Size: 32 bits (4 bytes)
-- Range: -2,147,483,648 to 2,147,483,647
-- Usage: Medium-sized integer values.
-
-*4. `bix64`*
-- Size: 64 bits (8 bytes)
-- Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
-- Usage: Large integer values.
-
-Here's an example of how you could use these integer types in a G## program:
-
-Example Code
-```
-bix8  smallValue = 10;
-bix16 mediumValue = 20000;
-bix32 largeValue  = 1000000000;
-bix64 hugeValue   = 9000000000000000000;
-```
-
-In this example, we declare four variables with different integer types and assign values to them. The `bix8`, `bix16`, `bix32`, and `bix64` types ensure that each variable can hold values within the specified range.
-
-Here are some floating-point types for G##:
-
-Floating-Point Types
-1. `Flo16` (16 bits, 2 bytes) - Half precision
-2. `Flo32` (32 bits, 4 bytes) - Single precision
-3. `Flo64` (64 bits, 8 bytes) - Double precision
-4. `Flo128` (128 bits, 16 bytes) - Quadruple precision
-
-These types provide varying levels of precision for floating-point numbers, allowing developers to choose the best type for their specific use case.
-
-Here are some data type suggestions for characters, booleans, and arrays in the G## programming language:
-
-Character Types:
-
-1. char (8 bits, 1 byte): A single Unicode character, capable of representing characters from various languages and scripts.
-
-Boolean Type:
-
-1. bool (8 bits, 1 byte): A logical value that can be either true or false.
-
-Array Types:
-
-1. arr<T> (dynamic size): A generic array type that can hold elements of any data type T, including integers, floating-point numbers, characters, booleans, and other arrays.
-2. fixarr<T, N> (fixed size N): A fixed-size array type that can hold N elements of type T.
-
-Example Code:
-
-char letter = 'A';
-bool isAdmin = true;
-arr<int> scores = [10, 20, 30];
-fixarr<int, 5> coordinates = [1, 2, 3, 4, 5];
-
-These data types provide a foundation for working with characters, booleans, and arrays in G##. You can further expand on these types or add new ones as needed to support the language's features and use case.
 
 Operators
 - Arithmetic operators: `+`, `-`, `*`, `/`, `**`, `!!`, `%`
@@ -470,10 +405,10 @@ exload moduleName
 
 _Package Management_
 
-G## supports package management using the `namespace` keyword.
+G## supports package management using the `packet` keyword.
 
 ```
-namespace packageName #
+packet packageName #
   ? package contents
 ```
 
@@ -541,17 +476,9 @@ Graphics
 - `Shape>> shape_type # size` - Draw a shape
 - `Color>> color_value` - Set the color
 
-Audio
-- `Beat>> beat_type # tempo` - Generate a beat
-- `Melody>> melody_type # tempo` - Generate a melody
-
 Security
 - `Encrypt>> data # key` - Encrypt data
 - `Decrypt>> encrypted_data # key` - Decrypt data
-
-Gaming
-- `Game>> game_name # game_type` - Create a new game
-- `Score>> score_value # game_id` - Add points to the score
 
 Miscellaneous
 - `Gesture>> gesture_type` - Perform a gesture
@@ -577,16 +504,16 @@ Conditional Statement
 ```
 x = 5
 omit x > 10 #
-  vokar("x is greater than 10")
+  vokar//("x is greater than 10")
 elv #
-  vokar("x is less than or equal to 10")
+  vokar//("x is less than or equal to 10")
 ```
 
 while Loop
 ```
 x = 0
 cycle x < 10 #
-  vokar(x)
+  vokar//(x)
   x = x + 1
 ```
 
@@ -599,7 +526,7 @@ Vokar(x)
 Function
 ```
 dox greet(name) #
-  vokar("Hello, " + name + "!")
+  vokar//("Hello, " + name + "!")
 
 greet("Emil")
 ```
@@ -612,7 +539,7 @@ type Person #
     this.age = age
 
   sayHello() #
-    vokar("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
+    vokar//("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
 
 person = new Person("Emil", 30)
 person.sayHello()
