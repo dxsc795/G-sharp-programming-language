@@ -178,6 +178,30 @@ Floating-Point Types
 
 These types provide varying levels of precision for floating-point numbers, allowing developers to choose the best type for their specific use case.
 
+Here are some data type suggestions for characters, booleans, and arrays in the G## programming language:
+
+Character Types:
+
+1. char (8 bits, 1 byte): A single Unicode character, capable of representing characters from various languages and scripts.
+
+Boolean Type:
+
+1. bool (8 bits, 1 byte): A logical value that can be either true or false.
+
+Array Types:
+
+1. arr<T> (dynamic size): A generic array type that can hold elements of any data type T, including integers, floating-point numbers, characters, booleans, and other arrays.
+2. fixarr<T, N> (fixed size N): A fixed-size array type that can hold N elements of type T.
+
+Example Code:
+
+char letter = 'A';
+bool isAdmin = true;
+arr<int> scores = [10, 20, 30];
+fixarr<int, 5> coordinates = [1, 2, 3, 4, 5];
+
+These data types provide a foundation for working with characters, booleans, and arrays in G##. You can further expand on these types or add new ones as needed to support the language's features and use case.
+
 Operators
 - Arithmetic operators: `+`, `-`, `*`, `/`, `**`, `!!`, `%`
 - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
