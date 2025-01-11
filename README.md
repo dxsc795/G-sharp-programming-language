@@ -136,26 +136,37 @@ Data Types
 
 
 Integer Types
-*1. `zip8`*
+*1. `bix8`*
 - Size: 8 bits (1 byte)
 - Range: 0 to 255
 - Usage: Small, unsigned integer values.
 
-*2. `zip16`*
+*2. `bix16`*
 - Size: 16 bits (2 bytes)
 - Range: -32,768 to 32,767
 - Usage: Small to medium-sized integer values.
 
-*3. `zip32`*
+*3. `bix32`*
 - Size: 32 bits (4 bytes)
 - Range: -2,147,483,648 to 2,147,483,647
 - Usage: Medium-sized integer values.
 
-*4. `zip64`*
+*4. `bix64`*
 - Size: 64 bits (8 bytes)
 - Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 - Usage: Large integer values.
 
+Here's an example of how you could use these integer types in a G## program:
+
+Example Code
+```
+bix8  smallValue = 10;
+bix16 mediumValue = 20000;
+bix32 largeValue  = 1000000000;
+bix64 hugeValue   = 9000000000000000000;
+```
+
+In this example, we declare four variables with different integer types and assign values to them. The `bix8`, `bix16`, `bix32`, and `bix64` types ensure that each variable can hold values within the specified range.
 
 Operators
 - Arithmetic operators: `+`, `-`, `*`, `/`, `**`, `!!`, `%`
