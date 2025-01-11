@@ -107,7 +107,7 @@ _Modules and Packages_
 - `exload` - Export statement
 - `loadfrom` - From statement
 - `loas` - As statement
-- `namespace` - Package statement
+- `packet` - Package statement
 
 _Other_
 - `remove` - Delete statement
@@ -118,12 +118,12 @@ _Other_
 - `waitfor` - Await statement
 
 Data Types
-- `kal` - Integer
-- `nexa` - Float
-- `vix` - String
-- `dual` - Boolean
-- `sek` - List
-- `kor` - Tuple
+- `int` - Integer
+- `float` - Float
+- `str` - String
+- `bool` - Boolean
+- `list` - List
+- `tuple` - Tuple
 - `mapa` - Dictionary
 - `void` - Null
 - `unin` - Undefined
