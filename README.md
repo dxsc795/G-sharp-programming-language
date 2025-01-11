@@ -503,98 +503,39 @@ Here is the rest of the document:
 Text-to-Speech
 
 G## provides a built-in text-to-speech system that allows you to convert text into spoken words.
-
-```
-Vocal text #
-  ? text to be converted to speech
-```
+Here is the syntax for each keyword:
 
 Artificial Intelligence/Machine Learning
-
-G## provides a built-in machine learning system that allows you to train and use machine learning models.
-
-```
-Learn model #
-  ? training data for the model
-
-Predict model #
-  ? input data for the model
-```
+- `Learn>> model_name # dataset` - Train a machine learning model
+- `Predict>> model_name # input_data` - Make predictions using a trained model
 
 Internet of Things (IoT)
-
-G## provides a built-in IoT system that allows you to connect to and control devices.
-
-```
-Connect device #
-  ? device to be connected
-
-Send device #
-  ? data to be sent to the device
-```
+- `Connect>> device_id # protocol` - Connect to a device
+- `Send>> device_id # data` - Send data to a connected device
 
 Graphics
-
-G## provides a built-in graphics system that allows you to create and manipulate graphics.
-
-```
-Shape shape #
-  ? shape to be created
-
-Color color #
-  ? color to be used
-```
+- `Shape>> shape_type # size` - Draw a shape
+- `Color>> color_value` - Set the color
 
 Audio
-
-G## provides a built-in audio system that allows you to create and manipulate audio.
-
-```
-Beat beat #
-  ? beat to be created
-
-Melody melody #
-  ? melody to be created
-```
+- `Beat>> beat_type # tempo` - Generate a beat
+- `Melody>> melody_type # tempo` - Generate a melody
 
 Security
-
-G## provides a built-in security system that allows you to encrypt and decrypt data.
-
-```
-Encrypt data #
-  ? data to be encrypted
-
-Decrypt data #
-  ? data to be decrypted
-```
+- `Encrypt>> data # key` - Encrypt data
+- `Decrypt>> encrypted_data # key` - Decrypt data
 
 Gaming
-
-G## provides a built-in gaming system that allows you to create and play games.
-
-```
-Game game #
-  ? game to be created
-
-Score score #
-  ? score to be updated
-```
+- `Game>> game_name # game_type` - Create a new game
+- `Score>> score_value # game_id` - Add points to the score
 
 Miscellaneous
-
-G## provides a built-in miscellaneous system that allows you to perform various tasks.
-
-```
-Gesture gesture #
-  ? gesture to be performed
-
-Face face #
-  ? face to be displayed
-
-Translate text #
-  ? text to be translated
-```
+- `Gesture>> gesture_type` - Perform a gesture
+- `Face>> face_expression` - Display a facial expression
+- `Translate>> text # language` - Translate text
+- `Vocal>> text # voice` - Convert text to speech
+- `Emotion>> emotion_type # intensity` - Convey emotions through speech
+- `Modulate>> pitch # volume` - Modulate the voice pitch and volume
 
 
 Here is the rest of the document:
