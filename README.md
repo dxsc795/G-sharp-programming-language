@@ -122,17 +122,9 @@ Graphics Keywords
 1. `Shape` - Draw a shape.
 2. `Color` - Set the color.
 
-Audio Keywords
-1. `Beat` - Generate a beat.
-2. `Melody` - Generate a melody.
-
 Security Keywords
 1. `Encrypt` - Encrypt data.
 2. `Decrypt` - Decrypt data.
-
-Gaming Keywords
-1. `Game` - Create a new game.
-2. `Score` - Add points to the score.
 
 Miscellaneous Keywords
 1. `Gesture` - Perform a gesture.
