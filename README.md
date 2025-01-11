@@ -553,12 +553,18 @@ elv #
   vokar("x is less than or equal to 10")
 ```
 
-Loop
+while Loop
 ```
 x = 0
 cycle x < 10 #
   vokar(x)
   x = x + 1
+```
+
+for loop
+```
+Walk x from 0 to 9 + 1
+Vokar(x)
 ```
 
 Function
