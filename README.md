@@ -9,9 +9,14 @@ G## Programming Language
 
 Syntax and Semantics
 - Consistent naming conventions: camelCase
-- Simplified comments: `?` (single-line), `[* *]` (multi-line)
-- Indentation-based code block syntax with clear rules for scope
-- The symbol `#` is used to separate the control flow statement from the code block that follows.
+
+Here's a brief explanation of each symbol:
+
+- `?`: Used for single-line comments.
+- `|`: Used to enclose parameters or values, such as in function calls or variable assignments.
+- `#`: Used to indicate the end of a statement or block, similar to a semicolon in other languages.
+- `[* *]`: Used to enclose multi-line comments.
+  
 
 In G##, `!!` and `%` are both modulus operators, but they behave slightly differently:
 
