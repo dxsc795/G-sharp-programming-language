@@ -1,0 +1,62 @@
+Keywords Control Structures
+
+kalt - input
+vokar - print
+omit - Conditional statement
+elv - Else clause
+el - Elif statement
+lift - Switch statement
+cycle - While loop
+walk - For loop
+Functions
+
+dox - Function definition
+Lamb - Lambda function
+outer - Nonlocal function
+universal - Global function
+Classes and Objects
+
+type - Type definition
+this - This parameter
+lize - Constructor method
+tost - String representation method
+tore - Representation method
+Exceptions
+
+attempt - Try block
+catch - Catch block
+ensure - Finally block
+throw - Raise statement
+verify - Assert statement
+Modules and Packages
+
+load - Import statement
+exload - Export statement
+loadfrom - From statement
+loas - As statement
+packet - Package statement
+Other
+
+remove - Delete statement
+execute - Execute statement
+eval - Evaluate statement
+using - With statement
+async - Asynchronous statement
+waitfor - Await statement
+Data Types
+
+int - Integer
+float - Float
+str - String
+bool - Boolean
+list - List
+tuple - Tuple
+mapa - Dictionary
+void - Null
+unin - Undefined
+graph - Graph data structure
+tree - Tree data structure
+heap - Heap data structure
+set - Set data structure
+matrix - Matrix data structure
+vector - Vector data structure
