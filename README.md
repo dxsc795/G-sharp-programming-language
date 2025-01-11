@@ -62,7 +62,7 @@ The `Const` keyword allows you to declare a constant value, and the `End` In tha
 
 ```
 Const MaxValue = 10 End
-Walk x from |0 to MaxValue| End
+Walk x from 0 to MaxValue End
 Vokar(x) End
 ```
 
