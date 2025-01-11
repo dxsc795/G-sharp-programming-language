@@ -13,7 +13,6 @@ Syntax and Semantics
 Here's a brief explanation of each symbol:
 
 - `?`: Used for single-line comments.
-- `|`: Used to enclose parameters or values, such as in function calls or variable assignments.
 - `#`: Used to indicate the end of a statement or block, similar to a semicolon in other languages.
 - `[* *]`: Used to enclose multi-line comments.
   
@@ -52,16 +51,10 @@ In mathematics
 
 In this example, the `**` operator raises 2 to the power of 3, resulting in 8.
 
-Here's the revised program:
-
-Walk x from |0 to 9 + 1|
-Vokar(x)
-End
-
 And if you'd like to declare a constant:
 
 Const MaxValue = 10
-Walk x from |0 to MaxValue|
+Walk x from 0 to MaxValue
 Vokar(x)
 End
 
