@@ -1,3 +1,36 @@
+
+In G##, !! and % are both modulus operators, but they behave slightly differently:
+
+!! is the integer modulus operator. It returns the remainder of the division of the dividend by the divisor, where both dividend and divisor are integers.
+
+% is the floating-point modulus operator. It returns the remainder of the division of the dividend by the divisor, where either dividend or divisor is a floating-point number.
+
+Here's an example:
+
+x = 17 !! 5
+
+x = 2
+
+y = 17 % 5
+
+y = 2.0
+
+In this example, both !! and % return the same result, but the data type of the result is different. The result of !! is an integer, while the result of % is a floating-point number.
+
+In G##, the ** operator is used for exponentiation. It raises the first operand to the power of the second operand.
+
+Here's an example:
+
+x = 2 ** 3
+
+x = 8
+
+Vokar(x)
+
+In mathematics 2 ** 3 = 2 × 2 × 2 = 8
+
+In this example, the ** operator raises 2 to the power of 3, resulting in 8.
+
 Keywords Control Structures
 
 kalt - input
