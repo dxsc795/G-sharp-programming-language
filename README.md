@@ -47,6 +47,28 @@ In mathematics
 
 In this example, the `**` operator raises 2 to the power of 3, resulting in 8.
 
+Here's the revised program:
+
+Walk x from |0 to 9 + 1|
+Vokar(x)
+End
+
+And if you'd like to declare a constant:
+
+Const MaxValue = 10
+Walk x from |0 to MaxValue|
+Vokar(x)
+End
+
+The `Const` keyword allows you to declare a constant value, and the `End` In that case, the `End` statement is used to indicate the end of a line or statement, rather than the end of a program or loop.
+
+```
+Const MaxValue = 10 End
+Walk x from |0 to MaxValue| End
+Vokar(x) End
+```
+
+
 excited 2 input in a single line code
 
 kal=number1 kalt"ente the first number" "ente the second number"
