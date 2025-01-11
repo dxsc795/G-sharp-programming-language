@@ -168,6 +168,16 @@ bix64 hugeValue   = 9000000000000000000;
 
 In this example, we declare four variables with different integer types and assign values to them. The `bix8`, `bix16`, `bix32`, and `bix64` types ensure that each variable can hold values within the specified range.
 
+Here are some floating-point types for G##:
+
+Floating-Point Types
+1. `Flo16` (16 bits, 2 bytes) - Half precision
+2. `Flo32` (32 bits, 4 bytes) - Single precision
+3. `Flo64` (64 bits, 8 bytes) - Double precision
+4. `Flo128` (128 bits, 16 bytes) - Quadruple precision
+
+These types provide varying levels of precision for floating-point numbers, allowing developers to choose the best type for their specific use case.
+
 Operators
 - Arithmetic operators: `+`, `-`, `*`, `/`, `**`, `!!`, `%`
 - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
