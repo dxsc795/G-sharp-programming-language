@@ -17,45 +17,11 @@ Here's a brief explanation of each symbol:
 - `[* *]`: Used to enclose multi-line comments.
   
 
-In G##, `!!` and `%` are both modulus operators, but they behave slightly differently:
-
-!! is the integer modulus operator. It returns the remainder of the division of the dividend by the divisor, where both dividend and divisor are integers.
-
-% is the floating-point modulus operator. It returns the remainder of the division of the dividend by the divisor, where either dividend or divisor is a floating-point number.
-
-Here's an example:
-
-x = 17 !! 5   
-
-x = 2
-
-y = 17 % 5  
-
-y = 2.0
-
-In this example, both `!!` and `%` return the same result, but the data type of the result is different. The result of `!!` is an integer, while the result of `%` is a floating-point number.
-
-
-In G##, the `**` operator is used for exponentiation. It raises the first operand to the power of the second operand.
-
-Here's an example:
-
-x = 2 ** 3    
-
-x = 8
-
-Vokar(x)
-
-In mathematics
-2 ** 3 = 2 × 2 × 2 = 8
-
-In this example, the `**` operator raises 2 to the power of 3, resulting in 8.
-
 And if you'd like to declare a constant:
 
 Const MaxValue = 10
 Walk x from 0 to MaxValue
-Vokar(x)
+Vokar//(x)
 End
 
 The `Const` keyword allows you to declare a constant value, and the `End` In that case, the `End` statement is used to indicate the end of a line or statement, rather than the end of a program or loop.
@@ -63,13 +29,9 @@ The `Const` keyword allows you to declare a constant value, and the `End` In tha
 ```
 Const MaxValue = 10 End
 Walk x from 0 to MaxValue End
-Vokar(x) End
+Vokar//(x) End
 ```
 
-
-excited 2 input in a single line code
-
-kal=number1 kalt"ente the first number" "ente the second number"
 
 Keywords
 _Control Structures_
@@ -420,7 +382,7 @@ Here is an example of importing a module:
 load math
 
 result = math.add(2, 3)
-vokar(result)  ? outputs 5
+vokar//(result)  ? outputs 5
 ```
 Here is the rest of the document:
 
@@ -497,7 +459,7 @@ Here are some examples of G## code:
 
 Hello World
 ```
-vokar("Hello, World!")
+vokar//("Hello, World!")
 ```
 
 Conditional Statement
