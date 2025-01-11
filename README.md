@@ -224,9 +224,9 @@ G## supports conditional statements using the `omit` keyword.
 
 ```
 omit condition #
-  // code to execute if condition is true
+  ? code to execute if condition is true
 elv #
-  // code to execute if condition is false
+  ? code to execute if condition is false
 ```
 
 _Loops_
@@ -234,10 +234,10 @@ G## supports loops using the `cycle` and `walk` keywords.
 
 ```
 cycle condition #
-  // code to execute repeatedly while condition is true
+  ? code to execute repeatedly while condition is true
 
 walk variable in iterable #
-  // code to execute for each item in the iterable
+  ? code to execute for each item in the iterable
 ```
 
 _Switch Statements_
@@ -246,11 +246,11 @@ G## supports switch statements using the `lift` keyword.
 ```
 lift expression #
   case value1 #
-    // code to execute if expression equals value1
+    ? code to execute if expression equals value1
   case value2 #
-    // code to execute if expression equals value2
+    ? code to execute if expression equals value2
   default #
-    // code to execute if expression does not equal any of the cases
+    ? code to execute if expression does not equal any of the cases
 ```
 
 Functions
@@ -266,7 +266,7 @@ In G##, functions are defined using the `dox` keyword.
 
 ```
 dox functionName(parameters) #
-  // function body
+  ? function body
 ```
 
 _Function Calls_
@@ -283,7 +283,7 @@ G## also supports lambda functions, which are small anonymous functions.
 
 ```
 Lamb(parameters) #
-  // lambda function body
+  ? lambda function body
 ```
 
 _Nonlocal Functions_
@@ -292,7 +292,7 @@ Nonlocal functions are functions that are defined inside another function.
 
 ```
 outer functionName(parameters) #
-  // nonlocal function body
+  ? nonlocal function body
 ```
 
 _Global Functions_
@@ -301,7 +301,7 @@ Global functions are functions that are defined outside of any other function.
 
 ```
 universal functionName(parameters) #
-  // global function body
+  ? global function body
 ```
 
 _Function Examples_
@@ -326,7 +326,7 @@ In G##, classes are defined using the `type` keyword.
 
 ```
 type ClassName #
-  // class body
+  ? class body
 ```
 
 _Class Constructors_
@@ -335,7 +335,7 @@ Class constructors are special methods that are called when an object is created
 
 ```
 lize(parameters) #
-  // constructor body
+  ? constructor body
 ```
 
 _Class Methods_
@@ -344,7 +344,7 @@ Class methods are functions that belong to a class.
 
 ```
 methodName(parameters) #
-  // method body
+  ? method body
 ```
 
 _Class Properties_
@@ -390,11 +390,11 @@ G## supports try-catch blocks for exception handling.
 
 ```
 attempt #
-  // code that may throw an exception
+  ? code that may throw an exception
 catch exception #
-  // code to handle the exception
+  ? code to handle the exception
 ensure #
-  // code to always execute, regardless of whether an exception was thrown
+  ? code to always execute, regardless of whether an exception was thrown
 ```
 
 _Throwing Exceptions_
@@ -450,7 +450,7 @@ G## supports package management using the `namespace` keyword.
 
 ```
 namespace packageName #
-  // package contents
+  ? package contents
 ```
 
 _Module Examples_
@@ -461,7 +461,7 @@ Here is an example of importing a module:
 load math
 
 result = math.add(2, 3)
-vokar(result)  // outputs 5
+vokar(result)  ? outputs 5
 ```
 Here is the rest of the document:
 
@@ -506,7 +506,7 @@ G## provides a built-in text-to-speech system that allows you to convert text in
 
 ```
 Vocal text #
-  // text to be converted to speech
+  ? text to be converted to speech
 ```
 
 Artificial Intelligence/Machine Learning
@@ -515,10 +515,10 @@ G## provides a built-in machine learning system that allows you to train and use
 
 ```
 Learn model #
-  // training data for the model
+  ? training data for the model
 
 Predict model #
-  // input data for the model
+  ? input data for the model
 ```
 
 Internet of Things (IoT)
@@ -527,10 +527,10 @@ G## provides a built-in IoT system that allows you to connect to and control dev
 
 ```
 Connect device #
-  // device to be connected
+  ? device to be connected
 
 Send device #
-  // data to be sent to the device
+  ? data to be sent to the device
 ```
 
 Graphics
@@ -539,10 +539,10 @@ G## provides a built-in graphics system that allows you to create and manipulate
 
 ```
 Shape shape #
-  // shape to be created
+  ? shape to be created
 
 Color color #
-  // color to be used
+  ? color to be used
 ```
 
 Audio
@@ -551,10 +551,10 @@ G## provides a built-in audio system that allows you to create and manipulate au
 
 ```
 Beat beat #
-  // beat to be created
+  ? beat to be created
 
 Melody melody #
-  // melody to be created
+  ? melody to be created
 ```
 
 Security
@@ -563,10 +563,10 @@ G## provides a built-in security system that allows you to encrypt and decrypt d
 
 ```
 Encrypt data #
-  // data to be encrypted
+  ? data to be encrypted
 
 Decrypt data #
-  // data to be decrypted
+  ? data to be decrypted
 ```
 
 Gaming
@@ -575,10 +575,10 @@ G## provides a built-in gaming system that allows you to create and play games.
 
 ```
 Game game #
-  // game to be created
+  ? game to be created
 
 Score score #
-  // score to be updated
+  ? score to be updated
 ```
 
 Miscellaneous
@@ -587,13 +587,13 @@ G## provides a built-in miscellaneous system that allows you to perform various 
 
 ```
 Gesture gesture #
-  // gesture to be performed
+  ? gesture to be performed
 
 Face face #
-  // face to be displayed
+  ? face to be displayed
 
 Translate text #
-  // text to be translated
+  ? text to be translated
 ```
 
 
