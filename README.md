@@ -512,7 +512,7 @@ person.sayHello()
 ```
 
 arrays in G##:
-
+```
 arr: int [3] = {1, 3, 6}
 Vokar//arr:[1]
 Output: 3
@@ -524,10 +524,10 @@ arr[1] = 3
 arr[2] = 6
 
 when you access arr[1], the output is indeed 3.
-
+```
 
 Here is the example 2:
-
+```
 cars: string [5] = {"BMW", "Audi", "Benz", "Toyota", "Honda"}
 Vokar//cars:[1]
 Output: Audi
@@ -541,7 +541,7 @@ cars[3] = Toyota
 cars[4] = Honda
 
 when you access arr[1], the output is indeed Audi.
-
+```
 Glossary
 
 Here is a glossary of G## terms:
