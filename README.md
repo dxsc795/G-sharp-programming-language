@@ -50,12 +50,37 @@ _Functions_
 - `universal` - Global function
 
 _Classes and Objects_
-- `type` - Type definition
-- `this` - This parameter
-- `lize` - Constructor method
-- `tost` - String representation method
-- `tore` - Representation method
 
+Class Definition
+- `forma` - Defines a new class
+- `molde` - Defines a new struct
+
+Constructors and Destructors
+- `crea` - Constructor, initializes a new object
+- `dest` - Destructor, cleans up when an object is destroyed
+
+Access Modifiers
+- `libre` - Public access, members are accessible from anywhere
+- `privy` - Private access, members are accessible only within the class
+- `comun` - Protected access, members are accessible within the class and its derived classes
+
+Inheritance
+- `hereda` - Specifies the parent class from which to inherit
+
+Polymorphism
+- `morf` - Method overriding, allows a subclass to provide a different implementation of a method
+
+Operator Overloading
+- `opera` - Operator overloading, allows custom classes to redefine operators
+
+Memory Management
+- `nuevo` - Dynamic memory allocation, creates a new object on the heap
+- `borra` - Dynamic memory deallocation, destroys an object on the heap
+
+Other
+- `esto` - Self-reference, refers to the current object
+- `fijo` - Static, specifies a method or variable that belongs to the class itself, rather than an instance of the class.
+  
 _Exceptions_
 - `attempt` - Try block
 - `catch` - Catch block
