@@ -14,9 +14,7 @@ dox - Function definition
 Lamb - Lambda function
 outer - Nonlocal function
 universal - Global function
-Classes and Objects
 
-Here are some new syntax keywords for a fictional programming language, G##:
 
 Class Definition
 - `forma` - Defines a new class
@@ -47,6 +45,7 @@ Memory Management
 Other
 - `esto` - Self-reference, refers to the current object
 - `fijo` - Static, specifies a method or variable that belongs to the class itself, rather than an instance of the class.
+
 
 attempt - Try block
 catch - Catch block
