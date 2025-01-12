@@ -446,11 +446,11 @@ Here is the rest of the document:
 
 Examples
 
-Here are some examples of G## code:
+Here are some examples of Vokar loop G## code:
 
-1. `Kalt // "enter text"` This line prompts the user to enter some text.
+1. `Kalt//"enter text"` This line prompts the user to enter some text.
 
-2. `Vokar // text: ++ 1 to 100)` This line takes the entered text and prints it out 100 times, appending numbers from 1 to 100.
+2. `Vokar//text: ++ 1 to 100)` This line takes the entered text and prints it out 100 times, appending numbers from 1 to 100.
 
 Output
 
