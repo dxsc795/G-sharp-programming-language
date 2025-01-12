@@ -21,15 +21,14 @@ And if you'd like to declare a constant:
 
 Const MaxValue = 10
 Walk x from 0 to MaxValue
-Vokar//(x)
-End
+Vokar//x:
 
 The `Const` keyword allows you to declare a constant value, and the `End` In that case, the `End` statement is used to indicate the end of a line or statement, rather than the end of a program or loop.
 
 ```
 Const MaxValue = 10 End
 Walk x from 0 to MaxValue End
-Vokar//(x) End
+Vokar//x: End
 ```
 
 
@@ -223,7 +222,7 @@ Here is an example of a simple function:
 
 ```
 dox greet(name) #
-  vokar("Hello, " + name + "!")
+  vokar//"Hello, " + name + "!"
 
 greet("Emil")
 ```
@@ -287,9 +286,9 @@ type Person #
     this.age = age
 
   sayHello() #
-    vokar("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
+    vokar//"Hello, my name is " + this.name: + " and I am " + this.age: + " years old."
 
-person = new Person("Emil", 30)
+person = new Person "Emil", 30
 person.sayHello()
 ```
 
@@ -334,7 +333,7 @@ Here is an example of a try-catch block:
 attempt #
   x = 5 / 0
 catch exception #
-  vokar("An error occurred: " + exception.message)
+  vokar//"An error occurred: " + exception.message
 ```
 
 This will output: "An error occurred: Division by zero"
@@ -374,7 +373,7 @@ Here is an example of importing a module:
 load math
 
 result = math.add(2, 3)
-vokar//(result)  ? outputs 5
+vokar// result: ? outputs 5
 ```
 Here is the rest of the document:
 
@@ -451,38 +450,38 @@ Here are some examples of G## code:
 
 Hello World
 ```
-vokar//("Hello, World!")
+vokar//"Hello, World!"
 ```
 
 Conditional Statement
 ```
 x = 5
 omit x > 10 #
-  vokar//("x is greater than 10")
+  vokar//"x is greater than 10"
 elv #
-  vokar//("x is less than or equal to 10")
+  vokar//"x is less than or equal to 10"
 ```
 
 while Loop
 ```
 x = 0
 cycle x < 10 #
-  vokar//(x)
+  vokar//x:
   x = x + 1
 ```
 
 for loop
 ```
 Walk x from 0 to 9 + 1
-Vokar(x)
+Vokar//x:
 ```
 
 Function
 ```
 dox greet(name) #
-  vokar//("Hello, " + name + "!")
+  vokar//"Hello, " + name + "!"
 
-greet("Emil")
+greet "Emil"
 ```
 
 Class
@@ -493,9 +492,9 @@ type Person #
     this.age = age
 
   sayHello() #
-    vokar//("Hello, my name is " + this.name + " and I am " + this.age + " years old.")
+    vokar//"Hello, my name is " + this.name + " and I am " + this.age + " years old."
 
-person = new Person("Emil", 30)
+person = new Person "Emil", 30
 person.sayHello()
 ```
 
