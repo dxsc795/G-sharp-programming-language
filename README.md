@@ -536,36 +536,99 @@ person = new Person "Emil", 30
 person.sayHello()
 ```
 
-arrays in G##:
+Here are the keywords for the Slide data structure in G##, along with examples:
+
+Creating and Modifying
+- `slide`: Create a new slide.
+Example: `slide myFruits = ["Apple", "Banana", "Cherry"]`
+
+- `push`: Add one or more elements to the end of the slide.
+Example: `push myFruits "Orange", "Grapes"`
+
+- `insert`: Insert one or more elements at a specified position in the slide.
+Example: `insert myFruits 1 "Mango"`
+
+- `remove`: Remove the element at a specified position from the slide.
+Example: `remove myFruits 2`
+
+- `pop`: Remove and return the last element from the slide.
+Example: `pop myFruits`
+
+- `clear`: Remove all elements from the slide.
+Example: `clear myFruits`
+
+Querying
+- `word`: Get the number of elements in the slide.
+Example: `print(word(myFruits))`
+
+- `isEmpty`: Check if the slide is empty.
+Example: `print(isEmpty(myFruits))`
+
+- `first`: Get the first element in the slide.
+Example: `print(first(myFruits))`
+
+- `last`: Get the last element in the slide.
+Example: `print(last(myFruits))`
+
+Transforming
+- `upper`: Convert all elements in the slide to uppercase.
+Example: `print(upper(myFruits))`
+
+- `lower`: Convert all elements in the slide to lowercase.
+Example: `print(lower(myFruits))`
+
+- `work`: Join all elements in the slide into a single string, using a specified separator.
+Example: `print(work(myFruits, "-"))`
+
+- `line`: Join all elements in the slide into a single string, using newline characters as separators.
+Example: `print(line(myFruits))`
+
+The `list` keyword is used to display all elements and their indices
+
+slide in G##:
 ```
-arr: int [3] = {1, 3, 6}
-Vokar//arr:[1]
-Output: 3
+Here's an example for the Slide data structure:
 
-The indexing starts at 0, so:
+fruits: slide = ["Apple", "Banana", "Cherry", "Orange", "Grapes"]
 
-arr[0] = 1
-arr[1] = 3
-arr[2] = 6
+Indexing starts at 0, so:
 
-when you access arr[1], the output is indeed 3.
+fruits[0] = "Apple"
+fruits[1] = "Banana"
+fruits[2] = "Cherry"
+fruits[3] = "Orange"
+fruits[4] = "Grapes"
+
+When you access fruits[1], the output is indeed "Banana".
+
+Here's how you can access and modify elements in the slide:
+
+print(fruits[1])  // Output: "Banana"
+fruits[1] = "Mango"
+print(fruits[1])  // Output: "Mango"
 ```
-
-Here is the example 2:
 ```
-cars: string [5] = {"BMW", "Audi", "Benz", "Toyota", "Honda"}
-Vokar//cars:[1]
-Output: Audi
+Here is the of listexample:
 
-The indexing starts at 0, so:
+fruits: slide = ["Apple", "Banana", "Cherry", "Orange", "Grapes"]
 
-cars[0] = BMW
-cars[1] = Audi
-cars[2] = Benz
-cars[3] = Toyota
-cars[4] = Honda
+Here is the list of elements and their indices:
 
-when you access arr[1], the output is indeed Audi.
+- index: 0, element: "Apple"
+- index: 1, element: "Banana"
+- index: 2, element: "Cherry"
+- index: 3, element: "Orange"
+- index: 4, element: "Grapes"
+
+Here are the list keywords for all elements and their indices:
+
+- `first`: index 0, element: "Apple"
+- `fruits[0]`: index 0, element: "Apple"
+- `fruits[1]`: index 1, element: "Banana"
+- `fruits[2]`: index 2, element: "Cherry"
+- `fruits[3]`: index 3, element: "Orange"
+- `fruits[4]`: index 4, element: "Grapes"
+- `last`: index 4, element: "Grapes"
 ```
 Glossary
 
