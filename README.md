@@ -517,7 +517,7 @@ Vokar//x:
 Function
 ```
 dox greet(name) #
-  vokar//"Hello, " + name + "!"
+  vokar//"Hello, " + name + "!"`1
 
 greet "Emil"
 ```
@@ -630,25 +630,3 @@ Here are the list keywords for all elements and their indices:
 - `fruits[4]`: index 4, element: "Grapes"
 - `last`: index 4, element: "Grapes"
 ```
-Glossary
-
-Here is a glossary of G## terms:
-
-- *Class*: A blueprint for creating objects.
-- *Conditional statement*: A statement that executes different blocks of code based on conditions.
-- *Function*: A block of code that can be called multiple times.
-- *Loop*: A statement that executes a block of code repeatedly.
-- *Object*: An instance of a class.
-- *Variable*: A storage location that holds a value.
-
-References
-
-Here are some references for further learning:
-
-- G## Language Specification
-- G## Standard Library
-- G## Tutorials
-
-Conclusion
-
-G## is a powerful and flexible programming language that is designed to be easy to learn and use. With its simple syntax, robust features, and comprehensive standard library, G## is an ideal language for a wide range of applications, from simple scripts to complex systems.
