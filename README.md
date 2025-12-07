@@ -137,4 +137,173 @@ walk item in fruits #
 - Inline and classic loops supported
 - Slides use >> push, << insert, -- remove
 - Functions, classes, exceptions are easy to type
-- Ready for interpreter implementation
+- Ready for interpreter implementation  
+
+🔹 Tysc Damnation Binding Full Syntax
+
+1. Purpose
+
+The &> operator binds a key value to a structure or array, producing a damnation mapping.
+It is used to create clean, nested mappings for Tysc.
+
+
+---
+
+2. Single Damnation Binding Syntax
+
+<damnation-binding> ::= <value> "&>" <structure>
+
+<value> → integer, float, string, or variable (acts as the key)
+
+<structure> → array, tuple, nested damnation, or any valid Tysc expression (acts as the value)
+
+
+Expansion
+
+a &> b  →  { a: b }
+
+Example
+
+x = 5 &> ([2, 7], [5, 7])  ? Bind 5 to the damnation array
+vokar(x)                   ? Print the mapping
+
+Output:
+
+{5: ([2, 7], [5, 7])}
+
+
+---
+
+3. Multiple Damnations
+
+You can create multiple damnation bindings in separate variables or combine them in a list.
+
+d1 = 1 &> ([1,1], [2,2])  ? First damnation
+d2 = 2 &> ([3,3], [4,4])  ? Second damnation
+all_damn = [d1, d2]       ? Store all in a list
+vokar(all_damn)           ? Print the list of mappings
+
+Output:
+
+[{1: ([1, 1], [2, 2])}, {2: ([3, 3], [4, 4])}]
+
+
+---
+
+4. Nested Damnation
+
+You can nest mappings inside other mappings.
+
+inner = 2 &> ([9,9], [8,8])      ? Inner mapping
+outer = 10 &> (inner, [1,0])     ? Outer mapping including inner
+vokar(outer)                     ? Print nested damnation
+
+Output:
+
+{10: ({2: ([9, 9], [8, 8])}, [1, 0])}
+
+
+---
+
+5. Damnation inside Functions
+
+dox makeDamn(x, a, b)             ? Function to create a damnation mapping
+    ret x &> (a, b)               ? Return mapping
+End #
+
+result = makeDamn(9, [1,9], [8,5]) ? Call function
+vokar(result)                      ? Print result
+
+Output:
+
+{9: ([1, 9], [8, 5])}
+
+
+---
+
+6. Damnation in Loops
+
+? Start counter at 1
+i = 1
+
+? Loop while i <= 3
+cycle i <= 3
+    ? Create a damnation mapping using i
+    d = i &> ([i, i+1], [i+2, i+3])
+
+    ? Print mapping for this iteration
+    vokar(d)
+
+    ? Increment counter
+    i = i + 1
+? End of loop
+
+Output:
+
+{1: ([1, 2], [3, 4])}
+{2: ([2, 3], [4, 5])}
+{3: ([3, 4], [5, 6])}
+
+
+---
+
+7. Damnation in Conditional Statements
+
+d = 5 &> ([2,7], [5,7])           ? Create mapping
+
+omit 5 == 5
+    vokar("Damnation active:", d)  ? Print if condition true
+elv
+    vokar("No damnation")          ? Else case
+#
+
+Output:
+
+Damnation active: {5: ([2, 7], [5, 7])}
+
+
+---
+
+8. Damnation in Switch (lift) Statements
+
+code = 5
+
+lift code
+    case 1
+        vokar(1 &> ([0,0], [0,0]))  ? Case 1
+    case 5
+        vokar(5 &> ([2,7], [5,7]))  ? Case 5
+    case default
+        vokar("Invalid code")        ? Default case
+#
+
+Output:
+
+{5: ([2, 7], [5, 7])}
+
+
+---
+
+9. Grammar Summary
+
+<statement>        ::= <assignment> | <function> | <loop> | <conditional> | <switch> | <expression>
+
+<assignment>       ::= <identifier> "=" <expression>
+<expression>       ::= <damnation-binding> | <value> | <array> | <tuple> | <function-call>
+
+<damnation-binding> ::= <value> "&>" <structure>
+<array>            ::= "[" <elements> "]"
+<tuple>            ::= "(" <elements> ")"
+
+<elements>         ::= <expression> ("," <expression>)*
+
+
+---
+
+10. Comments
+
+Single line comment: ? this is a comment
+
+Explains any code line clearly
+
+Must start with ?
