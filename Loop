@@ -1,0 +1,231 @@
+Chapter – Loops in Tysc
+
+What is a Loop?
+
+A loop is a control structure that repeats a block of code multiple times.
+
+Instead of writing the same code repeatedly, you place it inside a loop. The loop continues until a condition becomes false or all items have been processed.
+
+Example without a loop:
+
+vokar//1
+vokar//2
+vokar//3
+vokar//4
+vokar//5
+
+Using a loop:
+
+walk i from 1 to 5
+    vokar//i
+End
+
+Both produce the same output, but the loop is shorter and easier to maintain.
+
+---
+
+Types of Loops
+
+Tysc provides two main loops:
+
+- "cycle" – Repeats while a condition is true (similar to a while loop).
+- "walk" – Repeats over a range or a collection (similar to a for loop).
+
+---
+
+"cycle" Loop
+
+Purpose
+
+Use "cycle" when you do not know in advance how many times the loop should run. The loop continues as long as its condition remains true.
+
+---
+
+Syntax
+
+cycle condition
+    statements
+End
+
+---
+
+Syntax Breakdown
+
+cycle x < 10
+    vokar//x
+    x = x + 1
+End
+
+"cycle"
+
+The keyword that starts a while-style loop.
+
+"x < 10"
+
+The condition checked before each iteration.
+
+"statements"
+
+The code that repeats while the condition is true.
+
+"End"
+
+Marks the end of the loop block.
+
+---
+
+How It Works
+
+x = 0
+
+cycle x < 3
+    vokar//x
+    x = x + 1
+End
+
+The interpreter:
+
+1. Creates "x" with the value "0".
+2. Checks "x < 3".
+3. Executes the loop body.
+4. Increases "x" by "1".
+5. Returns to step 2.
+6. Stops when "x < 3" is false.
+
+Output:
+
+0
+1
+2
+
+---
+
+"walk" Loop
+
+Purpose
+
+Use "walk" when you know the range of values or want to process every element in a collection.
+
+---
+
+Range Syntax
+
+walk variable from start to end
+    statements
+End
+
+Example:
+
+walk i from 1 to 5
+    vokar//i
+End
+
+Output:
+
+1
+2
+3
+4
+5
+
+---
+
+Collection Syntax
+
+walk item in collection
+    statements
+End
+
+Example:
+
+slide fruits = ["Apple", "Banana", "Cherry"]
+
+walk fruit in fruits
+    vokar//fruit
+End
+
+Output:
+
+Apple
+Banana
+Cherry
+
+---
+
+How "walk" Works
+
+When the interpreter reads:
+
+walk fruit in fruits
+
+it:
+
+1. Finds the collection "fruits".
+2. Starts with the first element.
+3. Stores the current element in "fruit".
+4. Executes the loop body.
+5. Moves to the next element.
+6. Stops after the last element.
+
+---
+
+Nested Loops
+
+A loop can contain another loop.
+
+walk row from 1 to 3
+    walk col from 1 to 2
+        vokar//row + "," + col
+    End
+End
+
+Output:
+
+1,1
+1,2
+2,1
+2,2
+3,1
+3,2
+
+---
+
+Common Mistakes
+
+Infinite Loop
+
+x = 0
+
+cycle x < 5
+    vokar//x
+End
+
+Problem: "x" is never updated, so the condition is always true.
+
+Correct version:
+
+x = 0
+
+cycle x < 5
+    vokar//x
+    x = x + 1
+End
+
+---
+
+Best Practices
+
+- Use "walk" when iterating over a known range or a collection.
+- Use "cycle" when repetition depends on a condition.
+- Ensure the loop condition can eventually become false.
+- Keep loop bodies simple and readable.
+
+---
+
+Summary
+
+Loop| Purpose
+"cycle"| Repeat while a condition is true.
+"walk"| Repeat over a range or collection.
+
+Loops make programs shorter, more readable, and more efficient by allowing repeated execution of code without duplication.
