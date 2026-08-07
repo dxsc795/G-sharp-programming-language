@@ -5,305 +5,244 @@ Formerly: G##
 
 --- What is Tysc? ---
 Tysc is a flexible, easy-to-learn programming language designed for modern microcomputing. 
-It supports clean syntax, powerful data structures, loops, conditional statements, functions, classes, exceptions, modules, and more.
 
---- How to Use ---
-1. Write code in a .tysc file.
-2. End statements with `#`.
-3. Comments:
-   - Single-line: ? This is a comment
-   - Multi-line: [* This is a multi-line comment *]
-4. Run Tysc interpreter to execute the code.
+=================================
 
---- Basic Syntax ---
-- Constants: Const MAX = 10#
-- Variables: x = 5#
-- Statement end: # or End
+Chapter 1 – Introduction to Programming and Tysc
 
---- Data Types ---
-- int, float, str, bool
-- list, tuple, mapa, set, slide
-- graph, tree, heap, matrix, vector
-- void, unin
+1.1 Welcome
 
---- Operators ---
-- Arithmetic: + - * / ** !! %
-- Comparison: == != < > <= >=
-- Logical: and or not
-- Bitwise: & | ^ << >>
+Welcome to the official Tysc Programming Language Manual.
 
---- Control Structures ---
-- If-Else: omit, el, elv
-- Loops: cycle (while), walk (for)
-- Switch: lift
-
---- Loops Examples ---
-Inline Initialization:
-cycle [x = 0] < 10 #
-  vokar//x:#
-  x = x + 1#
-
-Classic Style:
-x = 0#
-cycle x < 10 #
-  vokar//x:#
-  x = x + 1#
-
-For Loop:
-Walk x from 0 to 9 + 1 #
-  vokar//x:#
-
---- Functions ---
-Keywords: fun (dox), lam, nl (outer), gl (universal)
-fun greet(name) #
-  vokar//"Hello, " + name: #
-
-greet "Emil"#
-
-Lambda Example:
-lam(x, y) # x + y#
-vokar//lam(2, 3):#
-
---- Classes & Objects ---
-Keywords: cls (forma), strct (molde), init (crea), del (dest), pub (libre), pri (privy), pro (comun), ext (hereda), ovr (morf), op (opera), new (nuevo), rm (borra), self (esto), stat (fijo)
-
-cls Person #
-  init(name, age) #
-    self.name = name#
-    self.age = age#
-
-  sayHello() #
-    vokar//"Hello, my name is " + self.name: + " and I am " + self.age: + " years old."#
-
-person = new Person "Emil", 30#
-person.sayHello()#
-
---- Exceptions ---
-Keywords: try (attempt), exc (catch), fin (ensure), raise (throw), chk (verify)
-
-try #
-  x = 5 / 0#
-exc e #
-  vokar//"Error: " + e.message#
-fin #
-  vokar//"Always runs"#
-
-raise "CustomError"#
-
---- Modules & Packages ---
-Keywords: load, exload, packet
-load math#
-result = math.add(2, 3)#
-vokar//result#
-
-packet MyPackage #
-  fun hello() #
-    vokar//"Hi from package!"#
-
---- Slide Data Structure ---
-Create Slide:
-slide fruits = ["Apple", "Banana", "Cherry"]#
-
-Add Elements:
-fruits >> "Orange" >> "Grapes"#
-
-Insert Elements:
-fruits << 1 << "Mango"#
-
-Remove Elements:
-fruits -- 2#  # Remove index 2
-fruits -- -1# # Remove last
-
-Access Elements:
-fruits[0]#  # First element
-fruits[-1]# # Last element
-
-Query Slide:
-fruits.len#
-fruits.empty?#
-
-Transform Slide:
-fruits.upper#
-fruits.lower#
-fruits.join "-"#
-fruits.line#
-
-Loop Slide:
-walk item in fruits #
-  vokar//item:#
-
---- Notes ---
-- End statements with `#`
-- Inline and classic loops supported
-- Slides use >> push, << insert, -- remove
-- Functions, classes, exceptions are easy to type
-- Ready for interpreter implementation  
-
-🔹 Tysc Damnation Binding Full Syntax
-
-1. Purpose
-
-The &> operator binds a key value to a structure or array, producing a damnation mapping.
-It is used to create clean, nested mappings for Tysc.
-
+This book teaches Tysc from the very beginning. No previous programming experience is required. By the end of this manual, you will understand how to write Tysc programs and how the language works.
 
 ---
 
-2. Single Damnation Binding Syntax
+1.2 What is Programming?
 
-<damnation-binding> ::= <value> "&>" <structure>
+Programming is the process of writing instructions that tell a computer what to do.
 
-<value> → integer, float, string, or variable (acts as the key)
+Every application you use, such as a calculator, a game, or a web browser, follows instructions written by programmers.
 
-<structure> → array, tuple, nested damnation, or any valid Tysc expression (acts as the value)
-
-
-Expansion
-
-a &> b  →  { a: b }
-
-Example
-
-x = 5 &> ([2, 7], [5, 7])  ? Bind 5 to the damnation array
-vokar(x)                   ? Print the mapping
-
-Output:
-
-{5: ([2, 7], [5, 7])}
-
+A program is simply a collection of instructions that the computer executes one by one.
 
 ---
 
-3. Multiple Damnations
+1.3 Why Do We Need Programming Languages?
 
-You can create multiple damnation bindings in separate variables or combine them in a list.
+Computers understand only machine language (binary numbers such as 0 and 1).
 
-d1 = 1 &> ([1,1], [2,2])  ? First damnation
-d2 = 2 &> ([3,3], [4,4])  ? Second damnation
-all_damn = [d1, d2]       ? Store all in a list
-vokar(all_damn)           ? Print the list of mappings
+Writing software directly in binary is extremely difficult.
 
-Output:
+Programming languages allow humans to write instructions using readable words and symbols.
 
-[{1: ([1, 1], [2, 2])}, {2: ([3, 3], [4, 4])}]
+Example:
 
+Machine Code
+101101000101001010101010...
 
----
+The same idea in Tysc:
 
-4. Nested Damnation
+vokar//"Hello, World!"
 
-You can nest mappings inside other mappings.
-
-inner = 2 &> ([9,9], [8,8])      ? Inner mapping
-outer = 10 &> (inner, [1,0])     ? Outer mapping including inner
-vokar(outer)                     ? Print nested damnation
-
-Output:
-
-{10: ({2: ([9, 9], [8, 8])}, [1, 0])}
-
+This is much easier for humans to understand.
 
 ---
 
-5. Damnation inside Functions
+1.4 What is Tysc?
 
-dox makeDamn(x, a, b)             ? Function to create a damnation mapping
-    ret x &> (a, b)               ? Return mapping
-End #
+Tysc is a modern, general-purpose programming language created by Emil Binoy.
 
-result = makeDamn(9, [1,9], [8,5]) ? Call function
-vokar(result)                      ? Print result
+It is designed to be:
 
-Output:
-
-{9: ([1, 9], [8, 5])}
-
+- Easy to learn
+- Easy to read
+- Flexible
+- Fast to write
+- Suitable for beginners and advanced programmers
 
 ---
 
-6. Damnation in Loops
+1.5 What Can You Build with Tysc?
 
-? Start counter at 1
-i = 1
+Tysc can be used to create:
 
-? Loop while i <= 3
-cycle i <= 3
-    ? Create a damnation mapping using i
-    d = i &> ([i, i+1], [i+2, i+3])
+- Console programs
+- Desktop applications
+- Games
+- Automation tools
+- Educational software
+- Utilities
+- Libraries
+- Scripts
 
-    ? Print mapping for this iteration
-    vokar(d)
-
-    ? Increment counter
-    i = i + 1
-? End of loop
-
-Output:
-
-{1: ([1, 2], [3, 4])}
-{2: ([2, 3], [4, 5])}
-{3: ([3, 4], [5, 6])}
-
+As the language grows, additional application types may be supported.
 
 ---
 
-7. Damnation in Conditional Statements
+1.6 How a Tysc Program Works
 
-d = 5 &> ([2,7], [5,7])           ? Create mapping
+The programming process follows these steps:
 
-omit 5 == 5
-    vokar("Damnation active:", d)  ? Print if condition true
-elv
-    vokar("No damnation")          ? Else case
-#
+1. Write Tysc source code.
+2. Save the file with the ".tysc" extension.
+3. Run the interpreter or compiler.
+4. The interpreter checks for syntax errors.
+5. The program executes.
 
-Output:
+Flow:
 
-Damnation active: {5: ([2, 7], [5, 7])}
-
-
----
-
-8. Damnation in Switch (lift) Statements
-
-code = 5
-
-lift code
-    case 1
-        vokar(1 &> ([0,0], [0,0]))  ? Case 1
-    case 5
-        vokar(5 &> ([2,7], [5,7]))  ? Case 5
-    case default
-        vokar("Invalid code")        ? Default case
-#
-
-Output:
-
-{5: ([2, 7], [5, 7])}
-
+Programmer
+     │
+     ▼
+ Tysc Source Code
+     │
+     ▼
+Interpreter / Compiler
+     │
+     ▼
+ Machine Instructions
+     │
+     ▼
+ Computer
 
 ---
 
-9. Grammar Summary
+1.7 What is Source Code?
 
-<statement>        ::= <assignment> | <function> | <loop> | <conditional> | <switch> | <expression>
+Source code is the text written by the programmer.
 
-<assignment>       ::= <identifier> "=" <expression>
-<expression>       ::= <damnation-binding> | <value> | <array> | <tuple> | <function-call>
+Example:
 
-<damnation-binding> ::= <value> "&>" <structure>
-<array>            ::= "[" <elements> "]"
-<tuple>            ::= "(" <elements> ")"
+vokar//"Hello"
 
-<elements>         ::= <expression> ("," <expression>)*
-
+This line is source code.
 
 ---
 
-10. Comments
+1.8 What is Syntax?
 
-Single line comment: ? this is a comment
+Syntax is the set of rules that defines how code must be written.
 
-Explains any code line clearly
+Correct syntax:
 
-Must start with ?
+vokar//"Hello"
+
+Incorrect syntax:
+
+"Hello" vokar
+
+The interpreter rejects incorrect syntax and reports an error.
+
+---
+
+1.9 What is a Statement?
+
+A statement is a single instruction.
+
+Examples:
+
+age = 18
+
+vokar//age
+
+speak "Hello"
+
+Each statement performs one task.
+
+---
+
+1.10 What is a Keyword?
+
+Keywords are reserved words built into Tysc.
+
+Examples:
+
+fun
+cls
+omit
+walk
+cycle
+try
+load
+
+Each keyword has a predefined meaning.
+
+---
+
+1.11 What is an Identifier?
+
+An identifier is a name chosen by the programmer.
+
+Examples:
+
+age
+studentName
+totalMarks
+Person
+welcome
+
+Identifiers are used for variables, functions, classes, and other program elements.
+
+---
+
+1.12 What is an Interpreter?
+
+The interpreter reads Tysc source code and executes it.
+
+Before execution, it checks for syntax errors. If an error is found, execution stops and an error message is displayed.
+
+---
+
+1.13 What is a Compiler?
+
+A compiler converts the entire Tysc program into machine code before execution.
+
+An interpreter executes code directly, while a compiler produces a separate executable program.
+
+Depending on the implementation, Tysc may use an interpreter, a compiler, or both.
+
+---
+
+1.14 Program Execution
+
+When a Tysc program runs, the computer performs these steps:
+
+1. Read the source code.
+2. Check the syntax.
+3. Process each statement in order.
+4. Execute the instructions.
+5. Finish the program.
+
+---
+
+1.15 Common Programming Terms
+
+Term| Meaning
+Program| A collection of instructions
+Source Code| Code written by the programmer
+Syntax| Rules for writing code
+Statement| One instruction
+Keyword| Reserved language word
+Identifier| Programmer-defined name
+Interpreter| Executes source code
+Compiler| Converts source code into machine code
+
+---
+
+1.16 Chapter Summary
+
+You have learned:
+
+- What programming is
+- Why programming languages exist
+- What Tysc is
+- What source code is
+- What syntax is
+- What statements are
+- What keywords are
+- What identifiers are
+- The difference between an interpreter and a compiler
+- How a Tysc program is executed
+
+In the next chapter, you will write your first Tysc program and learn how to display output, add comments, and understand the basic structure of Tysc code.
