@@ -1,0 +1,222 @@
+Chapter – "vokar" (Output)
+
+What is "vokar"?
+
+"vokar" is the built-in output keyword in Tysc.
+
+It displays text, numbers, variables, or the result of an expression on the screen.
+
+Use "vokar" whenever your program needs to show information to the user.
+
+---
+
+Why Use "vokar"?
+
+Programs often need to communicate with users.
+
+"vokar" is used to:
+
+- Display messages.
+- Show calculation results.
+- Print variable values.
+- Debug programs.
+- Display menus and instructions.
+
+Without "vokar", a program can perform calculations but the user cannot see the results.
+
+---
+
+Basic Syntax
+
+vokar//expression
+
+The "expression" can be:
+
+- A string
+- A number
+- A variable
+- A mathematical expression
+- A function result
+
+---
+
+Syntax Breakdown
+
+Example:
+
+vokar//"Hello, World!"
+
+"vokar"
+
+Keyword
+
+Starts an output operation.
+
+The interpreter recognizes that the following expression should be displayed.
+
+---
+
+"//"
+
+Output Separator
+
+Separates the "vokar" keyword from the expression to print.
+
+---
+
+""Hello, World!""
+
+A string literal.
+
+This is the text displayed on the screen.
+
+---
+
+How the Interpreter Works
+
+When the interpreter executes:
+
+vokar//"Hello, World!"
+
+it performs these steps:
+
+1. Reads the "vokar" keyword.
+2. Evaluates the expression after "//".
+3. Converts the result into text if necessary.
+4. Sends the text to the console or terminal.
+5. Displays the output.
+6. Continues to the next statement.
+
+---
+
+Example 1 – Print Text
+
+vokar//"Welcome to Tysc"
+
+Output:
+
+Welcome to Tysc
+
+---
+
+Example 2 – Print a Variable
+
+name = "Emil"
+
+vokar//name
+
+Output:
+
+Emil
+
+---
+
+Example 3 – Print Numbers
+
+a = 10
+b = 20
+
+vokar//a + b
+
+Output:
+
+30
+
+---
+
+Example 4 – Print Inside a Loop
+
+walk i from 1 to 5
+    vokar//i
+End
+
+Output:
+
+1
+2
+3
+4
+5
+
+---
+
+Example 5 – Print a Function Result
+
+fun square(x)
+    ret x * x
+End
+
+vokar//square(5)
+
+Output:
+
+25
+
+---
+
+Printing Multiple Values
+
+name = "Emil"
+age = 18
+
+vokar//"Name: " + name
+vokar//"Age: " + age
+
+Output:
+
+Name: Emil
+Age: 18
+
+---
+
+Common Mistakes
+
+Printing an Undefined Variable
+
+vokar//username
+
+If "username" has not been created, the interpreter should report an error.
+
+---
+
+Incorrect Keyword
+
+print//"Hello"
+
+"print" is not a Tysc keyword.
+
+Correct:
+
+vokar//"Hello"
+
+---
+
+Best Practices
+
+- Use clear and meaningful messages.
+- Print labels with values for better readability.
+- Use "vokar" for visual output.
+- Use "speak" when spoken output is required.
+
+---
+
+Difference Between "vokar" and "speak"
+
+Keyword| Purpose
+"vokar"| Displays information on the screen.
+"speak"| Reads information aloud using Text-to-Speech.
+
+Example:
+
+vokar//"Hello"
+speak "Hello"
+
+The first line displays Hello on the screen.
+
+The second line speaks Hello through the system's speakers.
+
+---
+
+Summary
+
+"vokar" is the standard output keyword in Tysc. It evaluates an expression and displays the result on the screen. It is one of the most frequently used keywords in the language and is essential for interacting with users and showing program results.
