@@ -1,0 +1,332 @@
+Chapter – Data Types in Tysc
+
+What is a Data Type?
+
+A data type defines the kind of value that can be stored in a variable.
+
+Every value in Tysc belongs to a data type. The data type tells the interpreter how to store, process, and use that value.
+
+Examples of data include:
+
+- Numbers
+- Text
+- True or False values
+- Lists of items
+- Graphs
+- Trees
+- Matrices
+
+---
+
+Why Do We Need Data Types?
+
+Different kinds of data require different operations.
+
+For example:
+
+- You can add numbers.
+- You can join text.
+- You can search a list.
+- You can traverse a tree.
+
+The interpreter uses the data type to determine which operations are valid.
+
+---
+
+Data Types in Tysc
+
+Data Type| Purpose
+"int"| Stores whole numbers.
+"float"| Stores decimal numbers.
+"str"| Stores text.
+"bool"| Stores "true" or "false".
+"list"| Stores an ordered collection of values.
+"tuple"| Stores an ordered, fixed collection of values.
+"mapa"| Stores key-value pairs.
+"set"| Stores unique values.
+"slide"| Stores a dynamic collection that can grow or shrink.
+"matrix"| Stores data in rows and columns.
+"vector"| Stores a one-dimensional mathematical vector.
+"graph"| Stores connected nodes and edges.
+"tree"| Stores hierarchical data.
+"heap"| Stores data in a heap structure.
+"void"| Represents no value.
+"unin"| Represents an undefined or uninitialized value.
+
+---
+
+Integer ("int")
+
+Purpose
+
+Stores whole numbers without decimal points.
+
+Syntax
+
+age = 18
+
+Examples:
+
+count = 100
+temperature = -5
+
+---
+
+Float ("float")
+
+Purpose
+
+Stores numbers with decimal values.
+
+Syntax
+
+price = 99.95
+
+Examples:
+
+pi = 3.14159
+speed = 75.5
+
+---
+
+String ("str")
+
+Purpose
+
+Stores text.
+
+Syntax
+
+name = "Emil"
+
+Examples:
+
+city = "London"
+language = "Tysc"
+
+---
+
+Boolean ("bool")
+
+Purpose
+
+Represents logical values.
+
+Possible values:
+
+true
+false
+
+Example:
+
+loggedIn = true
+
+---
+
+List
+
+Purpose
+
+Stores an ordered collection.
+
+Example:
+
+numbers = [1, 2, 3, 4]
+
+---
+
+Tuple
+
+Purpose
+
+Stores an ordered collection that is intended to remain unchanged after creation.
+
+Example:
+
+point = (10, 20)
+
+---
+
+Mapa
+
+Purpose
+
+Stores key-value pairs.
+
+Example:
+
+student = {
+    "name": "Emil",
+    "age": 18
+}
+
+---
+
+Set
+
+Purpose
+
+Stores unique values.
+
+Duplicate values are automatically ignored.
+
+Example:
+
+colors = {"Red", "Green", "Blue"}
+
+---
+
+Slide
+
+Purpose
+
+Stores a dynamic collection.
+
+Elements can be added, inserted, or removed while the program is running.
+
+Example:
+
+slide fruits = ["Apple", "Banana"]
+
+---
+
+Matrix
+
+Purpose
+
+Stores data in rows and columns.
+
+Example:
+
+matrix m = [
+    [1,2],
+    [3,4]
+]
+
+---
+
+Vector
+
+Purpose
+
+Stores a mathematical vector.
+
+Example:
+
+vector velocity = [10,20,30]
+
+---
+
+Graph
+
+Purpose
+
+Stores nodes connected by edges.
+
+Useful for maps, social networks, and routing.
+
+Example:
+
+graph cityMap
+
+---
+
+Tree
+
+Purpose
+
+Stores hierarchical data.
+
+Useful for file systems, menus, and organizational structures.
+
+Example:
+
+tree family
+
+---
+
+Heap
+
+Purpose
+
+Stores data using the heap data structure.
+
+Useful for priority queues and scheduling.
+
+Example:
+
+heap tasks
+
+---
+
+Void
+
+Purpose
+
+Represents the absence of a value.
+
+Commonly used as the return type of functions that do not return any data.
+
+---
+
+Unin
+
+Purpose
+
+Represents an undefined or uninitialized value.
+
+Example:
+
+value = unin
+
+---
+
+How the Interpreter Works
+
+When the interpreter reads:
+
+age = 18
+
+it performs these steps:
+
+1. Creates the variable "age".
+2. Detects that "18" is an integer.
+3. Stores it as an "int".
+4. Saves the value in memory.
+
+Memory:
+
+Variable   Type    Value
+------------------------
+age        int     18
+
+---
+
+Choosing the Correct Data Type
+
+If you want to store...| Use
+Whole numbers| "int"
+Decimal numbers| "float"
+Text| "str"
+True/False| "bool"
+A list of values| "list" or "slide"
+Unique values| "set"
+Key-value data| "mapa"
+A mathematical matrix| "matrix"
+Connected nodes| "graph"
+Hierarchical data| "tree"
+
+---
+
+Best Practices
+
+- Choose the correct data type for the information you are storing.
+- Use descriptive variable names.
+- Avoid storing numbers as text unless necessary.
+- Use "slide" when the collection size needs to change during program execution.
+
+---
+
+Summary
+
+Data types define how values are stored and processed in Tysc. They help the interpreter understand what each value represents and which operations are valid. Choosing the correct data type makes programs safer, faster, and easier to understand.
