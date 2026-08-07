@@ -1,0 +1,238 @@
+Slide Data Structure
+
+Purpose
+
+A slide is a dynamic collection that stores multiple values in a single variable.
+
+Unlike a fixed-size array, a slide can grow or shrink while the program is running.
+
+Use a slide when you need to store a list of related items, such as names, numbers, or objects.
+
+---
+
+Syntax
+
+slide variableName = [element1, element2, element3]#
+
+Example:
+
+slide fruits = ["Apple", "Banana", "Cherry"]#
+
+---
+
+Syntax Breakdown
+
+slide fruits = ["Apple", "Banana", "Cherry"]#
+
+"slide"
+
+Keyword
+
+Declares a new slide.
+
+The interpreter creates an empty dynamic collection.
+
+---
+
+"fruits"
+
+Identifier
+
+The name of the slide.
+
+This is how the program refers to the collection later.
+
+---
+
+"="
+
+Assignment Operator
+
+Stores the created slide in the variable "fruits".
+
+---
+
+"[ ]"
+
+Collection Literal
+
+The square brackets contain the elements stored in the slide.
+
+---
+
+""Apple", "Banana", "Cherry""
+
+These are the initial elements.
+
+Each element occupies one position (index).
+
+Index : 0        1         2
+Value : Apple  Banana   Cherry
+
+---
+
+How the Interpreter Works
+
+When the interpreter reads:
+
+slide fruits = ["Apple", "Banana", "Cherry"]#
+
+it performs these steps:
+
+1. Recognizes the "slide" keyword.
+2. Creates a new dynamic collection.
+3. Stores ""Apple"" at index "0".
+4. Stores ""Banana"" at index "1".
+5. Stores ""Cherry"" at index "2".
+6. Saves the collection in the variable "fruits".
+
+Memory:
+
+fruits
+│
+├── [0] Apple
+├── [1] Banana
+└── [2] Cherry
+
+---
+
+Adding Elements
+
+fruits >> "Orange"#
+
+Meaning
+
+">>" appends an element to the end of the slide.
+
+Result:
+
+Apple
+Banana
+Cherry
+Orange
+
+---
+
+Inserting Elements
+
+fruits << 1 << "Mango"#
+
+Meaning
+
+Insert ""Mango"" at index "1".
+
+Before:
+
+0 Apple
+1 Banana
+2 Cherry
+
+After:
+
+0 Apple
+1 Mango
+2 Banana
+3 Cherry
+
+---
+
+Removing Elements
+
+fruits -- 2#
+
+Removes the element at index "2".
+
+---
+
+Accessing Elements
+
+fruits[0]#
+
+Returns:
+
+Apple
+
+fruits[-1]#
+
+Returns the last element.
+
+---
+
+Properties
+
+Length:
+
+fruits.len#
+
+Returns the number of elements.
+
+---
+
+Empty Check:
+
+fruits.empty?#
+
+Returns:
+
+true
+
+or
+
+false
+
+---
+
+Transformations
+
+Uppercase:
+
+fruits.upper#
+
+Lowercase:
+
+fruits.lower#
+
+Join into a string:
+
+fruits.join "-"#
+
+Result:
+
+Apple-Banana-Cherry
+
+---
+
+Looping
+
+walk item in fruits#
+    vokar//item:#
+End
+
+The interpreter:
+
+1. Starts with index "0".
+2. Copies the current element into "item".
+3. Executes the loop body.
+4. Moves to the next element.
+5. Stops after the last element.
+
+Output:
+
+Apple
+Banana
+Cherry
+
+---
+
+Summary
+
+A slide is a dynamic collection that:
+
+- Stores multiple values.
+- Can grow or shrink at runtime.
+- Supports indexing.
+- Supports adding, inserting, and removing elements.
+- Can be transformed using built-in operations.
+- Can be iterated with the "walk" loop.
+
+Slides are designed to make collection handling simple and readable in Tysc.
