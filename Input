@@ -1,0 +1,200 @@
+Chapter – "kalt" (Input)
+
+What is "kalt"?
+
+"kalt" is the built-in input keyword in Tysc.
+
+It pauses the program, displays a prompt (optional), waits for the user to type a value, and returns the entered data.
+
+Use "kalt" whenever your program needs information from the user.
+
+---
+
+Why Use "kalt"?
+
+Programs are more useful when they can interact with users.
+
+For example:
+
+- Ask for a user's name.
+- Read a number.
+- Get a password.
+- Accept menu choices.
+- Collect application data.
+
+Without input, a program always behaves the same way. With "kalt", the program can respond differently based on what the user enters.
+
+---
+
+Basic Syntax
+
+variable = kalt//"Prompt message:"
+
+Example:
+
+name = kalt//"Enter your name:"
+
+---
+
+Syntax Breakdown
+
+name = kalt//"Enter your name:"
+
+"name"
+
+The variable that will store the user's input.
+
+---
+
+"="
+
+The assignment operator.
+
+It stores the value returned by "kalt" into the variable.
+
+---
+
+"kalt"
+
+The input keyword.
+
+It tells the interpreter to wait for user input.
+
+---
+
+"//"
+
+Separates the keyword from the prompt message.
+
+---
+
+""Enter your name:""
+
+The prompt shown to the user before they type.
+
+---
+
+How the Interpreter Works
+
+When the interpreter executes:
+
+name = kalt//"Enter your name:"
+
+it performs these steps:
+
+1. Reads the variable "name".
+2. Encounters the "kalt" keyword.
+3. Displays the prompt:
+   Enter your name:
+4. Pauses program execution.
+5. Waits for the user to type a value.
+6. Reads the entered text.
+7. Stores the value in "name".
+8. Continues executing the next statement.
+
+---
+
+Example 1 – Read a Name
+
+name = kalt//"Enter your name:"
+
+vokar//"Hello, " + name
+
+User Input
+
+Emil
+
+Output
+
+Hello, Emil
+
+---
+
+Example 2 – Read an Age
+
+age = kalt//"Enter your age:"
+
+vokar//"Your age is " + age
+
+User Input
+
+18
+
+Output
+
+Your age is 18
+
+---
+
+Example 3 – Using "kalt" with "speak"
+
+name = kalt//"Enter your name:"
+
+speak "Welcome, " + name
+
+If the user enters:
+
+Emil
+
+The computer speaks:
+
+Welcome, Emil
+
+---
+
+Input Data Types
+
+By default, "kalt" reads text.
+
+If the user enters:
+
+123
+
+The returned value is:
+
+"123"
+
+If Tysc supports automatic type conversion or conversion functions, you can convert the input to another type after reading it.
+
+---
+
+Common Mistakes
+
+Forgetting to Store the Input
+
+Incorrect:
+
+kalt//"Enter your name:"
+
+The user's input is read but not saved.
+
+Correct:
+
+name = kalt//"Enter your name:"
+
+---
+
+Using a Variable Before Reading Input
+
+Incorrect:
+
+vokar//name
+
+name = kalt//"Enter your name:"
+
+Read the input before using the variable.
+
+---
+
+Best Practices
+
+- Always display a clear prompt.
+- Use meaningful variable names.
+- Validate user input when necessary.
+- Combine "kalt" with "vokar" or "speak" to create interactive programs.
+
+---
+
+Summary
+
+"kalt" is Tysc's built-in input keyword. It pauses the program, accepts data from the user, returns the entered value, and stores it in a variable. It is the primary way to make Tysc programs interactive.
