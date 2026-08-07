@@ -1,0 +1,184 @@
+Chapter – "speak" (Text-to-Speech)
+
+What is "speak"?
+
+"speak" is a built-in Tysc keyword that converts text into spoken audio using the computer's Text-to-Speech (TTS) engine.
+
+Instead of displaying text on the screen like "vokar", "speak" reads the text aloud.
+
+---
+
+Why Use "speak"?
+
+Use "speak" when your program needs to:
+
+- Read messages aloud.
+- Assist visually impaired users.
+- Create voice assistants.
+- Give spoken notifications.
+- Build educational applications.
+
+---
+
+Syntax
+
+speak expression
+
+The "expression" can be:
+
+- A string
+- A variable
+- A text expression
+- The result of a function
+
+---
+
+Syntax Breakdown
+
+Example:
+
+speak "Welcome to Tysc"
+
+"speak"
+
+Keyword
+
+Starts a Text-to-Speech operation.
+
+The interpreter recognizes that the following expression should be spoken instead of printed.
+
+---
+
+""Welcome to Tysc""
+
+A string literal.
+
+This is the text that will be spoken.
+
+---
+
+How the Interpreter Works
+
+When the interpreter reads:
+
+speak "Welcome to Tysc"
+
+it performs these steps:
+
+1. Reads the "speak" keyword.
+2. Evaluates the expression after "speak".
+3. Converts the result into text (if necessary).
+4. Sends the text to the operating system's Text-to-Speech engine.
+5. The computer speaks the text aloud.
+6. The program continues with the next statement.
+
+---
+
+Examples
+
+Speak a String
+
+speak "Hello, World!"
+
+Speech:
+
+Hello, World!
+
+---
+
+Speak a Variable
+
+name = "Emil"
+
+speak name
+
+Speech:
+
+Emil
+
+---
+
+Speak an Expression
+
+name = "Emil"
+
+speak "Welcome, " + name
+
+Speech:
+
+Welcome, Emil
+
+---
+
+Speak Inside a Loop
+
+walk i from 1 to 3
+    speak "Number " + i
+End
+
+Speech:
+
+Number 1
+Number 2
+Number 3
+
+---
+
+Speak Inside a Function
+
+fun welcome(name)
+    speak "Welcome to Tysc, " + name
+End
+
+welcome("Emil")
+
+Speech:
+
+Welcome to Tysc, Emil
+
+---
+
+Difference Between "vokar" and "speak"
+
+Keyword| Purpose
+"vokar"| Displays text on the screen.
+"speak"| Speaks text through the speaker.
+
+Example:
+
+vokar//"Hello"
+speak "Hello"
+
+- "vokar" prints Hello.
+- "speak" says Hello aloud.
+
+---
+
+Common Mistakes
+
+Speaking an Undefined Variable
+
+speak username
+
+If "username" has not been created, the interpreter should report an error.
+
+---
+
+No Audio Device
+
+If the system has no Text-to-Speech engine or no audio output device, the interpreter should report a runtime error or fall back to displaying the text.
+
+---
+
+Best Practices
+
+- Use "speak" for important spoken messages.
+- Keep spoken text short and clear.
+- Combine "vokar" and "speak" when users need both visual and audio feedback.
+- Ensure a Text-to-Speech engine is available on the system.
+
+---
+
+Summary
+
+"speak" is Tysc's built-in Text-to-Speech feature. It converts text into spoken audio, allowing programs to communicate with users through voice. It can speak strings, variables, and expressions, making it useful for accessibility, assistants, educational software, and voice-enabled applications.
